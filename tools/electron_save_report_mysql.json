@@ -1,0 +1,47 @@
+{
+  "mode": "save",
+  "coldStartMs": 230,
+  "softwareRendering": true,
+  "apiBase": "http://localhost:8080/api",
+  "toast": "已保存到数据库：第 1 阶段 · 1948.11.11 04:00（v2）",
+  "snapshot": {
+    "t": 125.33439999999985,
+    "phase": 1,
+    "pla": 22,
+    "enemyLog": 0,
+    "logs": 64,
+    "divergences": 0
+  },
+  "dbList": [
+    {
+      "slot": "manual",
+      "slotName": "第 1 阶段 · 1948.11.11 04:00",
+      "version": 2,
+      "campaignT": 125.33439999999985,
+      "phase": 1,
+      "stateBytes": 74342,
+      "createdAt": "2026-11-05T14:22:59.483Z",
+      "updatedAt": "2026-11-05T14:23:27.512Z"
+    },
+    {
+      "slot": "auto",
+      "slotName": "自动存档",
+      "version": 1,
+      "campaignT": 19.200000000000003,
+      "phase": 1,
+      "stateBytes": 40437,
+      "createdAt": "2026-11-05T14:23:03.766Z",
+      "updatedAt": "2026-11-05T14:23:03.766Z"
+    }
+  ],
+  "dbRow": {
+    "slot": "manual",
+    "slotName": "第 1 阶段 · 1948.11.11 04:00",
+    "version": 2,
+    "campaignT": 125.33439999999985,
+    "phase": 1,
+    "stateBytes": 74342,
+    "updatedAt": "2026-11-05T14:23:27.512Z"
+  },
+  "dbStateMatchesUi": true
+}

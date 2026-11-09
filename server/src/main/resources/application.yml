@@ -1,0 +1,33 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: huaihai-save-server
+  datasource:
+    # 凭证只来自环境变量，这里不写任何默认值，缺变量时启动直接失败并提示
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    # 默认 MySQL；无 MySQL 凭证时可用 -P dev-h2 + DB_DRIVER=org.h2.Driver 起开发库
+    driver-class-name: ${DB_DRIVER:com.mysql.cj.jdbc.Driver}
+    hikari:
+      maximum-pool-size: 8
+      connection-timeout: 5000
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      continue-on-error: false
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+hx:
+  cors:
+    # 只放本机前端：8016 浏览器调试 / 8090 Electron 内置静态服务；可用环境变量覆盖
+    origins: ${HX_CORS_ORIGINS:http://localhost:8016,http://127.0.0.1:8016,http://localhost:8090,http://127.0.0.1:8090}
+
+logging:
+  level:
+    com.hx1948.server: INFO

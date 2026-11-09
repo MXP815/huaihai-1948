@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<link rel="icon" href="data:,">
+<title>淮海 1948 — 粟裕视角</title>
+<style>
+/*CSS*/
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<div class="scanline"></div>
+<div class="vignette"></div>
+
+<div id="ui">
+
+  <!-- ============ 标题 ============ -->
+  <div id="title" class="screen">
+    <div class="wrap">
+      <div class="kicker">1948.11.06 — 1949.01.10 · 徐州蚌埠之间</div>
+      <h1 class="title-h1">淮海 <em>1948</em></h1>
+      <div class="title-sub">粟 裕 视 角 · 半 即 时 战 役 指 挥</div>
+      <div class="title-body">
+        六十万对八十万。你手里是华野与中野的纵队，是支前民工推来的粮弹，是一条随时会被切断的铁路。
+        你可以按史实打，也可以不按。系统只按兵力、补给与敌军的决心推演，不会偷偷把你拨回剧本。
+      </div>
+      <div class="title-actions">
+        <button class="big-btn primary hidden" id="btnResume"><span>继续上次战役</span><small>RESUME</small></button>
+        <button class="big-btn primary" id="btnStart"><span>开始战役指挥</span><small>ENTER</small></button>
+        <button class="big-btn" id="btnCinema"><span>过场短片影院</span><small>CINEMATICS</small></button>
+        <button class="big-btn" id="btnHelp"><span>操作与规则</span><small>HELP</small></button>
+      </div>
+    </div>
+    <div class="title-meta">
+      <b>渲染</b> 自研 WebGL2 · 零外部依赖<br>
+      <b>内容</b> 史实概数 + 明确标注的游戏化演绎<br>
+      <b>声明</b> 不含任何受版权保护的影像或音频素材
+    </div>
+  </div>
+
+  <!-- ============ 战役指挥 ============ -->
+  <div id="campaign" class="screen hidden">
+    <div class="topbar">
+      <div class="tb-left">
+        <div class="tb-title">淮海 <span>1948</span></div>
+        <div class="tb-date" id="tbDate">1948.11.06 00:00 <small>第1天</small></div>
+      </div>
+      <div class="tb-mid">
+        <div class="speed" id="speedBox">
+          <button class="btn on" data-sp="0" title="暂停">❚❚</button>
+          <button class="btn" data-sp="1" title="8 小时 / 秒">1×</button>
+          <button class="btn" data-sp="2" title="16 小时 / 秒">2×</button>
+          <button class="btn" data-sp="3" title="32 小时 / 秒">4×</button>
+        </div>
+        <div class="pace" id="paceBox">
+          <button class="btn on" data-pace="0" title="无限思考时间，无任何时限">从容</button>
+          <button class="btn" data-pace="1" title="有时间流逝，但无硬截止">标准</button>
+          <button class="btn" data-pace="2" title="保留历史时间窗，供想看压力的玩家">紧迫</button>
+        </div>
+        <span class="tag cyan" id="phaseTag">第一阶段</span>
+        <span class="tag" id="weatherTag">晴</span>
+        <span class="tag gold" id="divTag" title="历史分歧度">分歧 0</span>
+      </div>
+      <div class="tb-right">
+        <div class="tb-stat">我军 <b id="statPla">—</b> · 敌军 <b id="statKmt">—</b><br>我军伤亡 <b id="statCas">—</b></div>
+        <!-- 保存按钮已移至右侧命令面板 #cmd-panel，避免与顶栏重复 ID -->
+        <button class="btn" id="btnMap">舆图 <i>M</i></button>
+        <button class="btn" id="btnAnalysis">军事分析 <i>A</i></button>
+        <button class="btn" id="btnBrief">战役简报 <i>B</i></button>
+        <button class="btn" id="btnQuality">画质 <i>Q</i></button>
+      </div>
+      <div class="tb-mob">
+        <button class="btn" id="btnMobOob">序列</button>
+        <button class="btn" id="btnMobCmd">指挥</button>
+        <button class="btn" id="btnMobLog">战报</button>
+      </div>
+    </div>
+
+    <div class="dock-left panel">
+      <div class="panel-title"><b>战斗序列</b><span id="oobCount">—</span></div>
+      <div class="oob" id="oob"></div>
+      <div class="oob-foot" id="oobFoot"></div>
+      <div class="log-wrap panel">
+        <div class="panel-title"><b>战报 / 电报</b><span id="logCount">—</span></div>
+        <div class="log-list" id="logList"></div>
+      </div>
+    </div>
+
+    <div class="dock-right">
+      <div class="panel unit-card" id="unitCard">
+        <div class="panel-title"><b>部队卡片</b><span>未选中</span></div>
+        <div class="uc-body"><p class="dim-note">在左侧战斗序列或三维地图上点击一支部队。右键地图下达命令。未侦察到的敌军不会显示。</p></div>
+      </div>
+      <div class="panel cmd-panel" id="cmdPanel">
+        <div class="panel-title"><b>指挥</b><span id="reqCount">待批 0</span></div>
+        <div class="cmd-body">
+          <div class="auth-row">
+            <span class="auth-label">指挥授权</span>
+            <input type="range" id="authSlider" min="0" max="2" step="1" value="1">
+            <b id="authName">常规</b>
+          </div>
+          <div class="auth-desc" id="authDesc">大事请示、小事自决。</div>
+          <label class="layer-row"><input type="checkbox" id="autoToggle" checked><span>部队自主权（遇阻可自行绕行 / 展开）</span></label>
+          <div class="cmd-btns">
+            <button class="btn primary" id="btnPlan" title="同时摆 2–3 套部署，并排比较预计结果">沙盘推演 <i>P</i></button>
+            <button class="btn" id="btnRouteDraw" title="在地图上点击落点、拖动连续绘制，右键撤销">手绘路线 <i>R</i></button>
+            <button class="btn" id="btnRouteCopy">复制路线</button>
+            <button class="btn" id="btnRoutePaste">粘贴给选中</button>
+            <button class="btn" id="btnRequests">下级请示 <i id="reqBadge">0</i></button>
+            <button class="btn" id="btnSave" title="保存并随时回来继续">保存进度</button>
+          </div>
+          <div class="pause-hint" id="pauseHint">从容档：战局暂停，命令可反复修改、可撤销。</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="labels"></div>
+    <div class="pause-banner hidden" id="pauseBanner"><b>战局已暂停</b><span id="pauseBannerText">您可以从容部署 · 命令可反复修改</span></div>
+    <div class="phase-ready hidden" id="phaseReady"><span id="phaseReadyText">阶段目标已达成</span><button class="btn primary" id="btnPhaseConfirm">确认进入下一阶段</button></div>
+    <div class="map-tip" id="mapTip">左键选部队 · 右键下命令 · R 手绘路线 · Enter 完成 · Esc 取消 · P 沙盘推演 · 拖拽旋转 · 滚轮缩放</div>
+    <div class="route-tip" id="routeTip"></div>
+
+    <div class="bottombar">
+      <div class="panel timeline">
+        <div class="tl-head"><span>战役进程 <b id="tlPhase">第一阶段</b></span><span id="tlClock">0 / 66 天</span></div>
+        <div class="tl-track"><div class="tl-fill" id="tlFill"></div><div id="tlMarks"></div></div>
+      </div>
+      <div class="panel ticker" id="ticker"></div>
+      <div class="panel toolbar">
+        <button class="btn" id="btnAssault">总攻（亲临前线） <i>F</i></button>
+        <button class="btn" id="btnGap">放开口子 <i>G</i></button>
+        <button class="btn" id="btnTransfer">战略转移</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ 全局舆图 ============ -->
+  <div id="map2d-screen" class="screen hidden">
+    <div class="map2d-head">
+      <h3>舆图 · 全局布防</h3>
+      <div class="sub" id="map2dSub">己方部署全显 · 敌情以战报所及为限</div>
+      <div style="flex:1"></div>
+      <button class="btn" id="btnMapClose">返回战场 <i>M</i></button>
+    </div>
+    <div class="map2d-body">
+      <canvas id="map2d"></canvas>
+      <div class="panel map-layers" id="mapLayers"></div>
+      <div class="map-tooltip hidden" id="mapTooltip"></div>
+    </div>
+    <div class="map2d-foot">
+      <span id="map2dLegend">—— 我军 · ⬤ 敌军（含情报时间戳 / 可信度） · ╱ 铁路 · ≈ 河流 · ⊙ 兵站</span>
+      <span id="map2dZoom">缩放 1.00× · 滚轮缩放 · 拖拽平移</span>
+    </div>
+  </div>
+
+  <!-- ============ 第一人称 ============ -->
+  <div id="fps-screen" class="screen hidden">
+    <div class="fps-brief">
+      <div class="k">前线 · 指挥员亲临</div>
+      <h2 id="fpsTitle">碾庄外围</h2>
+      <p id="fpsSub">华野突击部队 / 村落攻坚</p>
+    </div>
+    <div class="fps-obj">
+      <div>剩余目标 <span class="count" id="fpsEnemies">0</span><small> / <span id="fpsEnemiesTotal">0</span></small></div>
+      <div>我方兵力 <b id="fpsAllies">0</b> · 剩余时间 <b id="fpsTime">0s</b></div>
+    </div>
+    <div class="crosshair" id="crosshair"><i class="t"></i><i class="b"></i><i class="l"></i><i class="r"></i><i class="dot"></i></div>
+    <div class="hitmarker" id="hitmarker"><i></i><i></i><i></i><i></i></div>
+    <div class="dmg-dir" id="dmgDir"><i></i></div>
+    <div class="suppress" id="suppress"></div>
+    <div class="killfeed" id="killfeed"></div>
+    <div class="hud-bottom">
+      <div class="hp">
+        <div class="row">体力 <b id="fpsHP">100</b><span>/ 100</span></div>
+        <div class="hp-bar"><i id="fpsHPBar" style="width:100%"></i></div>
+        <div class="hp-note" id="fpsState">指挥员亲临 · 一线火力支援</div>
+      </div>
+      <div class="ammo">
+        <div class="num"><span id="fpsAmmo">30</span><small>/ <span id="fpsReserve">120</span></small></div>
+        <div class="gun" id="fpsGun">步枪 · 半自动</div>
+        <div class="mode" id="fpsMode">机瞄 / 右键</div>
+      </div>
+    </div>
+    <div class="cmd-wheel hidden" id="cmdWheel">
+      <div class="cw-head"><span>战术指令</span><span>仅可下达一次</span></div>
+      <div class="cmd-opt" data-cmd="focus"><span class="key">1</span>集中火力<small>压制正面机枪</small></div>
+      <div class="cmd-opt" data-cmd="flank"><span class="key">2</span>两翼包抄<small>友军从侧翼推进</small></div>
+      <div class="cmd-opt" data-cmd="suppress"><span class="key">3</span>火力压制<small>敌军停止推进 6 秒</small></div>
+    </div>
+    <div class="fps-help">
+      WASD 移动 · SHIFT 疾跑 · 鼠标瞄准 · 左键射击 · 右键机瞄<br>
+      R 换弹 · SPACE 跳跃 · C 蹲伏 · 1/2/3 战术指令 · ESC 返回指挥
+    </div>
+    <button class="fps-exit btn" id="btnFpsExit">退出前线（ESC）</button>
+    <div class="fps-touch" id="fpsTouch">
+      <div class="fps-stick" id="fpsStick"><i id="fpsStickKnob"></i></div>
+      <div class="fps-tbtns">
+        <button class="btn" id="btnFpsFire">开火</button>
+        <button class="btn" id="btnFpsReload">换弹</button>
+        <button class="btn" id="btnFpsAds">机瞄</button>
+        <button class="btn" id="btnFpsCmd">指令</button>
+      </div>
+    </div>
+    <div class="fps-center-hint hidden" id="fpsHint"></div>
+    <div class="death-screen hidden" id="deathScreen">
+      <h1>退 出 火 线</h1>
+      <p>你被抬下阵地 — 战役仍将继续</p>
+      <button class="btn primary" id="btnDeathBack">回到指挥部</button>
+    </div>
+  </div>
+
+  <!-- ============ 过场 ============ -->
+  <div id="cine-screen" class="screen hidden">
+    <div class="letterbox top"></div>
+    <div class="letterbox bot"></div>
+    <div class="cine-title" id="cineTitle">
+      <div class="kicker" id="cineKicker">淮海 1948</div>
+      <h1 id="cineH1">序章</h1>
+      <p id="cineSub">1948.11.06</p>
+    </div>
+    <div class="cine-caption" id="cineCaption">
+      <span class="who" id="cineWho">粟裕 · 第一人称</span>
+      <div class="cardline" id="cineText"></div>
+      <span class="note" id="cineNote"></span>
+    </div>
+    <div class="cine-sub" id="cineSubInfo">自研引擎内实时渲染 · 无外部素材</div>
+    <div class="cine-foot">
+      <span class="cine-idx" id="cineIdx">01 / 08</span>
+      <span class="cine-progress"><i id="cineProg"></i></span>
+      <button class="cine-skip btn" id="cineSkip">跳过 ▸</button>
+    </div>
+    <div class="cine-fade" id="cineFade"></div>
+  </div>
+
+  <!-- 弹窗 / 过场列表 -->
+  <div id="modalWrap" class="modal-wrap hidden"></div>
+  <div class="toast-wrap" id="toastWrap"></div>
+</div>
+
+<script>window.PAGE='index';</script>
+<script>
+/*JS*/
+</script>
+</body>
+</html>

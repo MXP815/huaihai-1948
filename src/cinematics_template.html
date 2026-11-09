@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>淮海 1948 — 过场短片</title>
+<style>
+/*CSS*/
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<div class="scanline"></div>
+<div class="vignette"></div>
+
+<div id="ui">
+  <div id="cine-menu" class="screen">
+    <div class="wrap" style="position:absolute;left:7vw;top:9vh;max-width:900px">
+      <div class="kicker">引擎内实时渲染 · 全部自制 · 无版权素材</div>
+      <h1 class="title-h1" style="font-size:54px">过场 <em>短片</em></h1>
+      <div class="title-sub" style="margin:10px 0 18px">淮海战役 · 粟裕第一人称 · 共八段</div>
+      <p style="font-size:12px;color:#8fa9af;line-height:1.9;max-width:640px;margin-bottom:18px">
+        所有画面由本页 WebGL 引擎程序化生成：地形、村落、行军纵队、指挥所、炮兵阵地、担架队、支前民工与运镜均为实时渲染。
+        字幕卡的叙述为艺术演绎；兵力、时间与地理以公开史料为据。可逐段播放，也可从头连播。
+      </p>
+      <p style="font-size:12px;color:#c8a86a;line-height:1.9;max-width:640px;margin-bottom:18px">
+        旁白：<b>本机 Windows SAPI 合成语音，机械音质，不是真人配音</b>；字幕与旁白为同一文本。
+        若某段合成文件缺失，该段退回纯字幕并标注。
+      </p>
+      <div style="display:flex;gap:10px;margin-bottom:18px">
+        <button class="btn primary" id="btnPlayAll" style="padding:10px 18px">连播全部 ▸</button>
+        <button class="btn" id="btnBackGame" style="padding:10px 18px">回到游戏</button>
+      </div>
+      <div class="cine-list" id="cineList" style="max-height:52vh;overflow:auto"></div>
+    </div>
+    <div class="title-meta">
+      <b>说明</b> 1991《大决战》仅作为风格参照<br>
+      <b>旁白</b> 本机 SAPI 合成 · 机械音质<br>
+      <b>素材</b> 无任何原片画面 / 音频 / 台词引用
+    </div>
+  </div>
+
+  <div id="cine-screen" class="screen hidden">
+    <div class="letterbox top"></div>
+    <div class="letterbox bot"></div>
+    <div class="cine-title" id="cineTitle">
+      <div class="kicker" id="cineKicker">淮海 1948</div>
+      <h1 id="cineH1">序章</h1>
+      <p id="cineSub">1948.11.06</p>
+    </div>
+    <div class="cine-caption" id="cineCaption">
+      <span class="who" id="cineWho">粟裕 · 第一人称</span>
+      <div class="cardline" id="cineText"></div>
+      <span class="note" id="cineNote"></span>
+    </div>
+    <div class="cine-sub" id="cineSubInfo">自研引擎内实时渲染 · 无外部素材</div>
+    <div class="cine-foot">
+      <span class="cine-idx" id="cineIdx">01 / 08</span>
+      <span class="cine-progress"><i id="cineProg"></i></span>
+      <button class="cine-skip btn" id="cineSkip">跳过 ▸</button>
+    </div>
+    <div class="cine-fade" id="cineFade"></div>
+  </div>
+
+  <div id="modalWrap" class="modal-wrap hidden"></div>
+</div>
+
+<script>window.PAGE='cinematics';</script>
+<script>
+/*JS*/
+</script>
+</body>
+</html>

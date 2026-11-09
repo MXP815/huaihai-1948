@@ -1,0 +1,1065 @@
+{
+  "meta": {
+    "dataset": "huaihai_1948_geo",
+    "title": "淮海战役地理与史料事实核查数据表",
+    "version": "1.0",
+    "generated_at": "2026-11-05",
+    "crs": "WGS84",
+    "angular_precision_deg": 0.01,
+    "precision_summary": "城镇与战斗地点坐标可到 0.01°（约 1.1 km），但多数地点的实际可信区间为 ±0.02°–0.05°（约 2–5 km）；部队位置只能到县/乡镇级（约 5–15 km），时间粒度到日或阶段；地形只到定性类型与少量工程尺寸，不能还原到地块或战壕线。",
+    "boundaries": [
+      "本表只整理客观事实：地名、坐标、水系走向、铁路线、城镇间距离、地形类型、作战时间、部队番号与大致部署。",
+      "未扫描、截取、重绘、描摹任何受版权保护的地图图面；未复制大段受版权保护的叙述文字。",
+      "《中国共产党100年地图集》所载《淮海战役要图》（审图号 GS(2021)3573号）仅作书目引用，未复制图面。",
+      "淮海战役纪念馆（徐州）的沙盘、展板仅参考其公开文字描述，未复制图像。",
+      "凡未能从可靠来源确认的数字，一律标注 未核实/估算，不做补凑。"
+    ],
+    "units": {
+      "coordinates": "十进制度，WGS84",
+      "distance": "公里 km",
+      "elevation": "米 m",
+      "temperature": "摄氏度 °C"
+    },
+    "confidence_levels": {
+      "high": "公开权威文字来源直接支持，或两个以上独立来源一致",
+      "medium": "单一公开来源或商业地图坐标，存在 ±0.02°–0.05° 偏差",
+      "low": "据文字描述推算，仅可用于示意，不可用于精确布点",
+      "unverified": "未找到可靠来源，仅作占位或待核"
+    },
+    "source_id_note": "source_ids 对应 sources.md 与根级 sources 数组中的编号；S31、S32 为书目/机构引用，未使用其图面。"
+  },
+
+  "places": [
+    {
+      "id": "P01",
+      "name": "徐州",
+      "aliases": ["徐州市", "徐州剿总驻地"],
+      "admin_1948": "江苏省徐州市",
+      "admin_now": "江苏省徐州市",
+      "lon": 117.18,
+      "lat": 34.26,
+      "coord_precision_deg": 0.02,
+      "confidence": "high",
+      "role_in_campaign": "战役中心与交通枢纽；国民党徐州“剿总”驻地；1948-12-01 弃守",
+      "phase": ["1", "2", "3"],
+      "source_ids": ["S01", "S02", "S03", "S24"],
+      "note": "陇海、津浦两线交汇；市区坐标为城市中心近似值，非某一具体据点。"
+    },
+    {
+      "id": "P02",
+      "name": "碾庄",
+      "aliases": ["碾庄圩", "邳州碾庄镇"],
+      "admin_1948": "江苏省邳县碾庄圩",
+      "admin_now": "江苏省邳州市碾庄镇",
+      "lon": 117.77,
+      "lat": 34.30,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "第一阶段核心包围点；黄百韬第七兵团兵团部及主力被围歼于此",
+      "phase": ["1"],
+      "source_ids": ["S24", "S25", "S27", "S33"],
+      "note": "不同商业地图给出的碾庄镇坐标经度相差约 0.04°（117.7416–117.7787），故取 117.77、置信区间 ±0.04°。碾庄圩在陇海线北侧约 1 km、徐州以东约 75 km（S27 文字）。"
+    },
+    {
+      "id": "P03",
+      "name": "双堆集",
+      "aliases": ["双堆集镇", "尖谷堆/平谷堆"],
+      "admin_1948": "安徽省宿县双堆集",
+      "admin_now": "安徽省淮北市濉溪县双堆集镇",
+      "lon": 116.87,
+      "lat": 33.39,
+      "coord_precision_deg": 0.05,
+      "confidence": "medium",
+      "role_in_campaign": "第二阶段核心包围点；黄维第十二兵团被围歼于此",
+      "phase": ["2"],
+      "source_ids": ["S15", "S30", "S33"],
+      "note": "乡镇范围约 116°55′–116°59′E、33°17′–33°26′N；镇区/政府驻地坐标约 116.867/33.383，另有 116.92/33.43 的网格点。取 116.87/33.39，误差可达 ±0.05°（约 5 km）。"
+    },
+    {
+      "id": "P04",
+      "name": "陈官庄",
+      "aliases": ["陈官庄村", "陈官庄乡"],
+      "admin_1948": "河南省永城县陈官庄",
+      "admin_now": "河南省永城市陈官庄镇（乡）",
+      "lon": 116.59,
+      "lat": 34.00,
+      "coord_precision_deg": 0.02,
+      "confidence": "high",
+      "role_in_campaign": "第三阶段核心包围点；杜聿明集团（第二、十三、十六兵团）被围歼于此",
+      "phase": ["3"],
+      "source_ids": ["S01", "S11", "S16", "S33"],
+      "note": "陈官庄乡位于永城市最东部约 20 km、王引河畔（S16）；乡镇坐标 116.588/34.004。"
+    },
+    {
+      "id": "P05",
+      "name": "蚌埠",
+      "aliases": ["蚌埠市"],
+      "admin_1948": "安徽省蚌埠市",
+      "admin_now": "安徽省蚌埠市",
+      "lon": 117.39,
+      "lat": 32.92,
+      "coord_precision_deg": 0.03,
+      "confidence": "high",
+      "role_in_campaign": "津浦线南段要点；李延年第六兵团、刘汝明第八兵团南线基地与北援出发地",
+      "phase": ["2", "3"],
+      "source_ids": ["S01", "S24", "S03"],
+      "note": "淮河南岸；徐州“剿总”总司令刘峙在战役中撤至蚌埠（S24）。"
+    },
+    {
+      "id": "P06",
+      "name": "宿县",
+      "aliases": ["宿州", "宿县专区"],
+      "admin_1948": "安徽省宿县",
+      "admin_now": "安徽省宿州市",
+      "lon": 116.98,
+      "lat": 33.63,
+      "coord_precision_deg": 0.03,
+      "confidence": "high",
+      "role_in_campaign": "津浦线中段要点；1948-11-15 中原野战军第三纵队攻克宿县，切断徐州—蚌埠联系",
+      "phase": ["1", "2"],
+      "source_ids": ["S01", "S05", "S24"],
+      "note": "双堆集在其西南约 30 km（直线）。"
+    },
+    {
+      "id": "P07",
+      "name": "永城",
+      "aliases": ["永城县"],
+      "admin_1948": "河南省永城县",
+      "admin_now": "河南省永城市",
+      "lon": 116.44,
+      "lat": 33.93,
+      "coord_precision_deg": 0.02,
+      "confidence": "high",
+      "role_in_campaign": "陈官庄包围圈后方县城；杜聿明集团西撤方向上的要点",
+      "phase": ["3"],
+      "source_ids": ["S11", "S16", "S33"],
+      "note": "市区坐标 33.931/116.444（S33）。"
+    },
+    {
+      "id": "P08",
+      "name": "蒙城",
+      "aliases": ["蒙城县"],
+      "admin_1948": "安徽省蒙城县",
+      "admin_now": "安徽省蒙城县",
+      "lon": 116.56,
+      "lat": 33.26,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "黄维第十二兵团由确山东进途中的涡河沿线要点",
+      "phase": ["2"],
+      "source_ids": ["S05", "S30"],
+      "note": "涡河中游；坐标取县城中心近似值。"
+    },
+    {
+      "id": "P09",
+      "name": "涡阳",
+      "aliases": ["涡阳县"],
+      "admin_1948": "安徽省涡阳县",
+      "admin_now": "安徽省涡阳县",
+      "lon": 116.22,
+      "lat": 33.51,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "涡河沿线；黄维兵团东进与中原野战军阻击地域",
+      "phase": ["2"],
+      "source_ids": ["S05", "S30"],
+      "note": "涡河自西北向东南穿境。"
+    },
+    {
+      "id": "P10",
+      "name": "宿迁",
+      "aliases": ["宿迁县"],
+      "admin_1948": "江苏省宿迁县",
+      "admin_now": "江苏省宿迁市",
+      "lon": 118.28,
+      "lat": 33.96,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "中运河与骆马湖之间要点；黄百韬兵团西撤侧翼",
+      "phase": ["1"],
+      "source_ids": ["S07", "S24"],
+      "note": "坐标取市区中心近似值。"
+    },
+    {
+      "id": "P11",
+      "name": "新安镇",
+      "aliases": ["新沂", "新安街道"],
+      "admin_1948": "江苏省宿迁县新安镇（1949年置新沂县，待核）",
+      "admin_now": "江苏省新沂市新安街道",
+      "lon": 118.35,
+      "lat": 34.37,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "黄百韬第七兵团西撤起点；陇海线东段要点",
+      "phase": ["1"],
+      "source_ids": ["S24", "S25", "S26"],
+      "note": "1948 年新安镇的县级归属需再核（新沂县 1949 年设立）；坐标取今新沂市区。"
+    },
+    {
+      "id": "P12",
+      "name": "曹八集",
+      "aliases": ["八义集", "八义集镇"],
+      "admin_1948": "江苏省邳县八义集（旧称曹八集）",
+      "admin_now": "江苏省邳州市八义集镇",
+      "lon": 117.69,
+      "lat": 34.27,
+      "coord_precision_deg": 0.03,
+      "confidence": "high",
+      "role_in_campaign": "碾庄以西约 8 km；华东野战军在此切断黄百韬兵团西退徐州的道路",
+      "phase": ["1"],
+      "source_ids": ["S01", "S24", "S33"],
+      "note": "高德 POI 坐标 34.2715/117.6924。"
+    },
+    {
+      "id": "P13",
+      "name": "大许家",
+      "aliases": ["大许镇", "大许家阻击战"],
+      "admin_1948": "江苏省铜山县大许家",
+      "admin_now": "江苏省徐州市铜山区大许镇",
+      "lon": 117.56,
+      "lat": 34.28,
+      "coord_precision_deg": 0.03,
+      "confidence": "high",
+      "role_in_campaign": "徐东阻击战核心地域；华野阻援兵团在此阻击邱清泉、李弥兵团东援",
+      "phase": ["1"],
+      "source_ids": ["S01", "S24", "S33"],
+      "note": "商业地图坐标 117.555–117.579 / 34.284–34.288，取 117.56/34.28。"
+    },
+    {
+      "id": "P14",
+      "name": "青龙集",
+      "aliases": ["青龙镇", "青龙集镇"],
+      "admin_1948": "安徽省萧县青龙集",
+      "admin_now": "安徽省宿州市萧县青龙集镇",
+      "lon": 116.63,
+      "lat": 34.03,
+      "coord_precision_deg": 0.02,
+      "confidence": "high",
+      "role_in_campaign": "陈官庄包围圈东南部；杜聿明集团被围地域之一",
+      "phase": ["3"],
+      "source_ids": ["S01", "S17", "S33"],
+      "note": "萧县西南、皖豫交界；镇政府坐标 116.631–116.641 / 34.031–34.035。"
+    },
+    {
+      "id": "P15",
+      "name": "郭楼",
+      "aliases": ["郭楼村"],
+      "admin_1948": "河南省永城县陈官庄乡郭楼村",
+      "admin_now": "河南省永城市陈官庄镇郭楼村",
+      "lon": 116.61,
+      "lat": 33.99,
+      "coord_precision_deg": 0.05,
+      "confidence": "low",
+      "role_in_campaign": "陈官庄东南约 2 km，杜聿明集团向南突围必经之地；华野第二纵队在此组织防御",
+      "phase": ["3"],
+      "source_ids": ["S10", "S12", "S16"],
+      "note": "郭楼为陈官庄乡 14 个行政村之一（S16）；坐标据“陈官庄东南 2 km”文字推算，未取到独立坐标点。"
+    },
+    {
+      "id": "P16",
+      "name": "窑湾",
+      "aliases": ["窑湾镇", "窑湾古镇"],
+      "admin_1948": "江苏省宿迁县窑湾镇（待核）",
+      "admin_now": "江苏省新沂市窑湾镇",
+      "lon": 118.09,
+      "lat": 34.28,
+      "coord_precision_deg": 0.05,
+      "confidence": "low",
+      "role_in_campaign": "1948-11-08 至 11-12，华野第一纵队在此歼灭黄百韬兵团第63军约 1.37 万人",
+      "phase": ["1"],
+      "source_ids": ["S09", "S18"],
+      "note": "骆马湖北岸；坐标为估算，未取到独立坐标点。"
+    },
+    {
+      "id": "P17",
+      "name": "邳州",
+      "aliases": ["邳县", "运河镇"],
+      "admin_1948": "江苏省邳县（运河镇/邳城，1948年县城驻地待核）",
+      "admin_now": "江苏省邳州市",
+      "lon": 117.96,
+      "lat": 34.31,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "陇海线与中运河交汇；运河铁桥为黄百韬兵团西撤的关键通道",
+      "phase": ["1"],
+      "source_ids": ["S07", "S25", "S33"],
+      "note": "碾庄在其西约 17 km。"
+    },
+    {
+      "id": "P18",
+      "name": "运河铁桥（邳州）",
+      "aliases": ["运河大铁桥", "陇海线运河桥"],
+      "admin_1948": "江苏省邳县运河镇西",
+      "admin_now": "江苏省邳州市",
+      "lon": 117.93,
+      "lat": 34.31,
+      "coord_precision_deg": 0.05,
+      "confidence": "low",
+      "role_in_campaign": "黄百韬兵团由新安镇西撤时渡过中运河的主要通道；桥面拥堵加剧撤退迟缓",
+      "phase": ["1"],
+      "source_ids": ["S07", "S27"],
+      "note": "桥址坐标为示意性估算；据 S07，铁桥位于陇海线与京杭大运河交汇处。"
+    },
+    {
+      "id": "P19",
+      "name": "固镇",
+      "aliases": ["固镇镇"],
+      "admin_1948": "安徽省灵璧县固镇（待核）",
+      "admin_now": "安徽省固镇县",
+      "lon": 117.32,
+      "lat": 33.32,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "津浦线宿县—蚌埠间要点；南线阻援作战地域",
+      "phase": ["2"],
+      "source_ids": ["S01", "S24"],
+      "note": "1948 年固镇属灵璧县，1965 年设固镇县；建制待核，坐标为县城近似值。"
+    },
+    {
+      "id": "P20",
+      "name": "商丘",
+      "aliases": ["商丘县", "朱集"],
+      "admin_1948": "河南省商丘县",
+      "admin_now": "河南省商丘市",
+      "lon": 115.65,
+      "lat": 34.41,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "陇海线西段要点；徐州西侧交通与退路方向",
+      "phase": ["1", "2"],
+      "source_ids": ["S01", "S24"],
+      "note": "坐标取市区中心近似值。"
+    },
+    {
+      "id": "P21",
+      "name": "贾汪",
+      "aliases": ["贾汪镇", "贾汪矿区"],
+      "admin_1948": "江苏省铜山县贾汪镇",
+      "admin_now": "江苏省徐州市贾汪区",
+      "lon": 117.45,
+      "lat": 34.44,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "1948-11-08 何基沣、张克侠率第三绥靖区部队在此及台儿庄一带起义",
+      "phase": ["1"],
+      "source_ids": ["S01", "S24"],
+      "note": "起义使徐州东北运河防线出现缺口，华野得以直插曹八集。"
+    },
+    {
+      "id": "P22",
+      "name": "台儿庄",
+      "aliases": ["台儿庄镇"],
+      "admin_1948": "山东省峄县台儿庄",
+      "admin_now": "山东省枣庄市台儿庄区",
+      "lon": 117.73,
+      "lat": 34.56,
+      "coord_precision_deg": 0.03,
+      "confidence": "medium",
+      "role_in_campaign": "第三绥靖区起义地域之一；中运河北段要点",
+      "phase": ["1"],
+      "source_ids": ["S01", "S24"],
+      "note": "坐标取城区中心近似值。"
+    },
+    {
+      "id": "P23",
+      "name": "李石林",
+      "aliases": ["石林乡"],
+      "admin_1948": "安徽省萧县石林",
+      "admin_now": "安徽省宿州市萧县石林乡",
+      "lon": 116.63,
+      "lat": 34.09,
+      "coord_precision_deg": 0.05,
+      "confidence": "low",
+      "role_in_campaign": "陈官庄包围圈北部；与陈官庄、青龙集并称的包围地域",
+      "phase": ["3"],
+      "source_ids": ["S01", "S11"],
+      "note": "坐标为据“陈官庄、青龙集、李石林地区”文字的示意性估算。"
+    },
+    {
+      "id": "P24",
+      "name": "大王庄",
+      "aliases": ["大王庄村"],
+      "admin_1948": "安徽省宿县双堆集南大王庄",
+      "admin_now": "安徽省淮北市濉溪县双堆集镇",
+      "lon": 116.87,
+      "lat": 33.36,
+      "coord_precision_deg": 0.05,
+      "confidence": "low",
+      "role_in_campaign": "双堆集南侧屏障；1948-12-06 前后中野六纵与华野七纵在此血战",
+      "phase": ["2"],
+      "source_ids": ["S15", "S30"],
+      "note": "据“位于双堆集南侧”文字推算，仅示意。"
+    }
+  ],
+
+  "waterways": [
+    {
+      "id": "W01",
+      "name": "中运河（京杭大运河中段）",
+      "type": "运河/人工河道",
+      "course": "自山东韩庄经台儿庄、邳州、宿迁至淮安，串联微山湖与洪泽湖水系；邳州段与陇海线交汇",
+      "width_est_m": [100, 200],
+      "depth_est_m": [2, 4],
+      "fordability": "不可徒涉，依赖运河铁桥、渡船与临时浮桥",
+      "water_network_note": "邳州以西的碾庄一带为水网圩寨区，村落外壕与运河支渠相连",
+      "source_ids": ["S07", "S24", "S27"],
+      "confidence": "medium",
+      "note": "宽度、深度为估算值，未取到 1948 年断面实测。"
+    },
+    {
+      "id": "W02",
+      "name": "沂河",
+      "type": "天然河流",
+      "course": "自沂蒙山经临沂、郯城入江苏，经新沂入骆马湖，下游经新沂河入海",
+      "width_est_m": [100, 300],
+      "depth_est_m": [1.5, 4],
+      "fordability": "主河道不可徒涉，需桥梁或渡船；枯水期浅滩可涉",
+      "water_network_note": "与新沂、宿迁以北的湖洼、沟渠连成水网",
+      "source_ids": ["S07", "S24"],
+      "confidence": "medium",
+      "note": "宽度为估算值。"
+    },
+    {
+      "id": "W03",
+      "name": "沭河",
+      "type": "天然河流",
+      "course": "与沂河平行，自沂水经临沭、新沂、沭阳入灌河/黄海",
+      "width_est_m": [50, 150],
+      "depth_est_m": [1, 3],
+      "fordability": "枯水期部分河段可徒涉，主河道仍需桥船",
+      "water_network_note": "苏北水网组成部分，河渠密集、桥梁稀疏",
+      "source_ids": ["S24"],
+      "confidence": "medium",
+      "note": "宽度为估算值；战役中为主要侧翼障碍之一。"
+    },
+    {
+      "id": "W04",
+      "name": "涡河",
+      "type": "天然河流",
+      "course": "自开封经亳州、涡阳、蒙城，于怀远入淮河；西北—东南走向",
+      "width_est_m": [50, 150],
+      "depth_est_m": [1, 3],
+      "fordability": "枯水期上游与浅滩可徒涉，主河道需桥船",
+      "water_network_note": "黄维兵团由确山东进时沿涡河北侧行进，中野在涡河、浍河一线阻击",
+      "source_ids": ["S05", "S30"],
+      "confidence": "medium",
+      "note": "宽度为估算值。"
+    },
+    {
+      "id": "W05",
+      "name": "浍河",
+      "type": "天然河流",
+      "course": "自商丘经永城、濉溪、固镇，于五河入淮河；西北—东南走向",
+      "width_est_m": [30, 80],
+      "depth_est_m": [0.5, 2],
+      "fordability": "枯水期多数河段可徒涉，雨后水位上涨则难涉",
+      "water_network_note": "双堆集、陈官庄两战场之间的重要水系；沿线桥梁少",
+      "source_ids": ["S15", "S16", "S30"],
+      "confidence": "medium",
+      "note": "宽度为估算值。"
+    },
+    {
+      "id": "W06",
+      "name": "包河",
+      "type": "天然河流",
+      "course": "自商丘经永城南，入浍河；西北—东南走向",
+      "width_est_m": [20, 50],
+      "depth_est_m": [0.5, 1.5],
+      "fordability": "枯水期多可徒涉",
+      "water_network_note": "永城—濉溪间小河，雨季道路易被切断",
+      "source_ids": ["S16", "S30"],
+      "confidence": "low",
+      "note": "走向与宽度为一般地理描述/估算，未逐段核实。"
+    },
+    {
+      "id": "W07",
+      "name": "濉河",
+      "type": "天然河流",
+      "course": "自濉溪经宿州、灵璧、泗县入洪泽湖；西北—东南走向",
+      "width_est_m": [20, 60],
+      "depth_est_m": [0.5, 2],
+      "fordability": "枯水期部分可徒涉",
+      "water_network_note": "宿县—灵璧间水网的一部分",
+      "source_ids": ["S15", "S24"],
+      "confidence": "low",
+      "note": "走向为一般地理描述，宽度估算。"
+    },
+    {
+      "id": "W08",
+      "name": "沱河",
+      "type": "天然河流",
+      "course": "自商丘经永城、宿州、灵璧、泗县入洪泽湖；西北—东南走向",
+      "width_est_m": [30, 80],
+      "depth_est_m": [0.5, 2],
+      "fordability": "枯水期多数可徒涉，雨后难涉",
+      "water_network_note": "与濉河、浍河平行，构成皖北平行水系",
+      "source_ids": ["S15", "S24"],
+      "confidence": "low",
+      "note": "宽度估算。"
+    },
+    {
+      "id": "W09",
+      "name": "王引河",
+      "type": "天然河流/浍河支流",
+      "course": "流经永城市东部陈官庄乡一带",
+      "width_est_m": [10, 30],
+      "depth_est_m": [0.5, 1.5],
+      "fordability": "枯水期多可徒涉",
+      "water_network_note": "陈官庄包围圈内的主要小河，村庄沿河分布",
+      "source_ids": ["S16"],
+      "confidence": "medium",
+      "note": "据永城市政府“陈官庄乡位于王引河畔”；支流关系待核。"
+    },
+    {
+      "id": "W10",
+      "name": "淮河（蚌埠段）",
+      "type": "天然河流",
+      "course": "自西向东经蚌埠，接纳涡河、浍河等，入洪泽湖",
+      "width_est_m": [300, 500],
+      "depth_est_m": [3, 8],
+      "fordability": "不可徒涉，依赖桥梁与渡船",
+      "water_network_note": "国民党军南线基地的天然屏障；蚌埠为津浦线淮河大桥所在",
+      "source_ids": ["S01", "S24"],
+      "confidence": "medium",
+      "note": "宽度为估算值。"
+    },
+    {
+      "id": "L01",
+      "name": "微山湖",
+      "type": "湖泊",
+      "course": "徐州以北，中运河与之相连",
+      "width_est_m": null,
+      "depth_est_m": null,
+      "fordability": "不可徒涉",
+      "water_network_note": "徐州北侧湖洼，限制大部队向北机动",
+      "source_ids": ["S24"],
+      "confidence": "medium",
+      "note": "面积与岸线未核。"
+    },
+    {
+      "id": "L02",
+      "name": "骆马湖",
+      "type": "湖泊",
+      "course": "宿迁以北、新沂以南，沂河入湖",
+      "width_est_m": null,
+      "depth_est_m": null,
+      "fordability": "不可徒涉",
+      "water_network_note": "窑湾位于其北岸；湖洼使宿迁—新安镇间通路收窄",
+      "source_ids": ["S09", "S18"],
+      "confidence": "medium",
+      "note": "面积与岸线未核。"
+    },
+    {
+      "id": "L03",
+      "name": "洪泽湖",
+      "type": "湖泊",
+      "course": "苏北，濉河、沱河等入湖",
+      "width_est_m": null,
+      "depth_est_m": null,
+      "fordability": "不可徒涉",
+      "water_network_note": "战役东南方向的远端湖洼，非核心战场",
+      "source_ids": ["S24"],
+      "confidence": "medium",
+      "note": "面积与岸线未核。"
+    }
+  ],
+
+  "railways": [
+    {
+      "id": "R01",
+      "name": "陇海线（西段）",
+      "segment": "徐州—商丘",
+      "direction": "东西向",
+      "key_stations": ["徐州", "黄口", "砀山", "商丘"],
+      "military_significance": "徐州西侧主要铁路通道；杜聿明集团放弃徐州后向西撤退的方向之一",
+      "status_1948": "通车；徐州—商丘间为国民党军控制",
+      "source_ids": ["S01", "S24"],
+      "confidence": "medium",
+      "note": "中间站名以常见线路资料整理，个别站名待核。"
+    },
+    {
+      "id": "R02",
+      "name": "陇海线（东段）",
+      "segment": "徐州—连云港",
+      "direction": "东西向",
+      "key_stations": ["徐州", "大许家", "八义集（曹八集）", "碾庄", "邳州（运河）", "新安镇（新沂）", "东海", "连云港"],
+      "military_significance": "黄百韬第七兵团自新安镇沿此线西撤；碾庄圩位于线路北侧约 1 km；徐东阻击战沿此线展开",
+      "status_1948": "通车；新安镇以东为国民党军后方",
+      "source_ids": ["S01", "S24", "S27"],
+      "confidence": "medium",
+      "note": "大许家、八义集、碾庄是否为 1948 年营运站需再核；线路走向可靠。"
+    },
+    {
+      "id": "R03",
+      "name": "津浦线（南段）",
+      "segment": "徐州—宿县—固镇—蚌埠",
+      "direction": "南北向",
+      "key_stations": ["徐州", "夹沟", "符离集", "宿县", "固镇", "蚌埠"],
+      "military_significance": "徐州—蚌埠间唯一铁路通道；1948-11-15 中野第三纵队攻克宿县，切断徐州与蚌埠联系；南线阻援沿此线展开",
+      "status_1948": "通车；宿县以南为国民党军控制",
+      "source_ids": ["S01", "S05", "S24"],
+      "confidence": "high",
+      "note": "站名按常见津浦线资料整理。"
+    },
+    {
+      "id": "R04",
+      "name": "津浦线（北段）",
+      "segment": "徐州—韩庄—临城—兖州—济南",
+      "direction": "南北向",
+      "key_stations": ["徐州", "茅村", "韩庄", "临城", "兖州", "济南"],
+      "military_significance": "徐州北侧退路；战役期间未成为主要作战方向",
+      "status_1948": "通车；济南已于 1948-09 解放，北段被切断",
+      "source_ids": ["S24"],
+      "confidence": "medium",
+      "note": "站名按常见线路资料整理。"
+    },
+    {
+      "id": "R05",
+      "name": "津浦线（蚌埠—浦口）",
+      "segment": "蚌埠—明光—滁州—浦口",
+      "direction": "南北向",
+      "key_stations": ["蚌埠", "明光", "滁州", "浦口"],
+      "military_significance": "李延年第六兵团、刘汝明第八兵团南撤与补给通道；南京方向的后方铁路",
+      "status_1948": "通车",
+      "source_ids": ["S01", "S24"],
+      "confidence": "medium",
+      "note": "站名按常见线路资料整理。"
+    }
+  ],
+
+  "terrain_units": [
+    {
+      "id": "T01",
+      "name": "黄淮平原（徐淮平原）",
+      "extent": "西起商丘、东至连云港，北抵微山湖，南至淮河",
+      "elevation_m": [20, 50],
+      "characteristics": [
+        "地势平坦开阔，由西北向东南微倾",
+        "村庄密集，道路多为土路，雨雪后泥泞",
+        "河渠纵横，桥梁稀少，形成天然分割"
+      ],
+      "phase_relevance": ["1", "2", "3"],
+      "source_ids": ["S01", "S15", "S24"],
+      "confidence": "high",
+      "note": "海拔为区域一般值，未逐点实测。"
+    },
+    {
+      "id": "T02",
+      "name": "碾庄水网圩寨区",
+      "extent": "邳县西部碾庄圩及其周边村落",
+      "elevation_m": [25, 35],
+      "characteristics": [
+        "村落为防水患筑土圩，高出地面约 2–3 m",
+        "圩外环水壕，宽约 30–50 m、深约 2 m，不能徒涉",
+        "土圩内侧有 1–2.5 m 高土堤，陡滑难攀",
+        "村落间水洼、沟壕相连，通行不便，易守难攻"
+      ],
+      "phase_relevance": ["1"],
+      "source_ids": ["S07", "S13", "S26"],
+      "confidence": "high",
+      "note": "工程尺寸来自公开文字描述（亲历记/纪念馆公开介绍），非测绘数据。"
+    },
+    {
+      "id": "T03",
+      "name": "双堆集开阔平原",
+      "extent": "宿县西南双堆集为中心，纵横约 7.5 km",
+      "elevation_m": [25, 40],
+      "characteristics": [
+        "“毫无隐蔽物的广阔平原”，缺少可利用地形",
+        "双堆（尖谷堆、平谷堆）为少数土堆制高点",
+        "村庄稀疏，粮食、燃料匮乏",
+        "被围部队只能依托村落与临时挖掘的工事"
+      ],
+      "phase_relevance": ["2"],
+      "source_ids": ["S15", "S30"],
+      "confidence": "high",
+      "note": "“纵横约 7.5 公里”为公开史料描述；土堆高度未核。"
+    },
+    {
+      "id": "T04",
+      "name": "陈官庄平原低洼区",
+      "extent": "永城东北陈官庄、青龙集、李石林一带，南北约 5 km、东西约 10 km",
+      "elevation_m": [25, 40],
+      "characteristics": [
+        "平原为主，局部低洼，王引河及浍河支流穿行",
+        "村庄密集，可挖掘交通壕与地堡",
+        "冬季雨雪后道路泥泞、田野积水结冰"
+      ],
+      "phase_relevance": ["3"],
+      "source_ids": ["S01", "S11", "S16"],
+      "confidence": "high",
+      "note": "包围圈尺寸来自公开史料（国防部、中国军网）。"
+    },
+    {
+      "id": "T05",
+      "name": "湖泊洼地",
+      "extent": "微山湖、骆马湖、洪泽湖及周边低洼地带",
+      "elevation_m": [10, 30],
+      "characteristics": [
+        "湖面与滩涂限制大部队横向机动",
+        "冬季枯水期滩地可部分通行，但淤泥与冰面风险大",
+        "沿湖堤坝构成天然防线"
+      ],
+      "phase_relevance": ["1", "2", "3"],
+      "source_ids": ["S09", "S18", "S24"],
+      "confidence": "medium",
+      "note": "湖岸线与 1948 年水面范围未核，现代治理后变化较大。"
+    },
+    {
+      "id": "T06",
+      "name": "黄河故道堤坝",
+      "extent": "徐州—淮阴一带废黄河高堤",
+      "elevation_m": [35, 60],
+      "characteristics": [
+        "废黄河河床高于两侧地面，形成天然高堤",
+        "堤顶可作制高点与观察点，堤脚多村庄",
+        "穿越堤坝的通道有限，利于阻击"
+      ],
+      "phase_relevance": ["1", "3"],
+      "source_ids": ["S24"],
+      "confidence": "low",
+      "note": "堤高 3–5 m 为一般地理描述/估算，未逐段实测。"
+    },
+    {
+      "id": "T07",
+      "name": "现代采煤塌陷区（不可用于 1948 场景）",
+      "extent": "徐州贾汪、铜山及淮北、濉溪等煤矿区",
+      "elevation_m": null,
+      "characteristics": [
+        "现代开采形成塌陷湖泊与湿地",
+        "1948 年不存在此类水面",
+        "三维地图若使用现代 DEM/影像，会误加水面与洼地"
+      ],
+      "phase_relevance": [],
+      "source_ids": [],
+      "confidence": "high",
+      "note": "常识性提醒：现代地形数据与 1948 年地貌差异显著，需剔除。"
+    }
+  ],
+
+  "distances": {
+    "method": "straight_km 为 WGS84 大圆距离计算值（±1 km）；road_km_est 为按现有公路/铁路走向的里程估算（±10–15%）；rail_km_est 为铁路里程估算。1948 年实际道路等级更低、绕行更多，游戏内路径应略大于直线值。",
+    "pairs": [
+      {"from": "P01 徐州", "to": "P02 碾庄", "straight_km": 55, "road_km_est": 75, "rail_km_est": 70, "note": "S27 文字“西距徐州约 75 公里”与公路估算一致"},
+      {"from": "P01 徐州", "to": "P12 曹八集", "straight_km": 47, "road_km_est": 60, "rail_km_est": 55, "note": ""},
+      {"from": "P01 徐州", "to": "P13 大许家", "straight_km": 35, "road_km_est": 45, "rail_km_est": 40, "note": ""},
+      {"from": "P01 徐州", "to": "P11 新安镇", "straight_km": 108, "road_km_est": 115, "rail_km_est": 110, "note": ""},
+      {"from": "P02 碾庄", "to": "P11 新安镇", "straight_km": 54, "road_km_est": 60, "rail_km_est": 58, "note": "黄百韬兵团西撤路线"},
+      {"from": "P02 碾庄", "to": "P12 曹八集", "straight_km": 8, "road_km_est": 10, "rail_km_est": 8, "note": ""},
+      {"from": "P02 碾庄", "to": "P17 邳州", "straight_km": 18, "road_km_est": 20, "rail_km_est": 18, "note": "“东距邳州市区20千米”与估算一致"},
+      {"from": "P01 徐州", "to": "P06 宿县", "straight_km": 72, "road_km_est": 80, "rail_km_est": 80, "note": ""},
+      {"from": "P06 宿县", "to": "P03 双堆集", "straight_km": 29, "road_km_est": 40, "rail_km_est": null, "note": ""},
+      {"from": "P01 徐州", "to": "P03 双堆集", "straight_km": 101, "road_km_est": 130, "rail_km_est": null, "note": ""},
+      {"from": "P03 双堆集", "to": "P05 蚌埠", "straight_km": 71, "road_km_est": 90, "rail_km_est": null, "note": ""},
+      {"from": "P01 徐州", "to": "P05 蚌埠", "straight_km": 150, "road_km_est": 175, "rail_km_est": 175, "note": "津浦线里程估算"},
+      {"from": "P01 徐州", "to": "P07 永城", "straight_km": 77, "road_km_est": 95, "rail_km_est": null, "note": ""},
+      {"from": "P07 永城", "to": "P04 陈官庄", "straight_km": 16, "road_km_est": 18, "rail_km_est": null, "note": ""},
+      {"from": "P01 徐州", "to": "P04 陈官庄", "straight_km": 62, "road_km_est": 90, "rail_km_est": null, "note": "1948 年土路绕行，实际行程更长"},
+      {"from": "P04 陈官庄", "to": "P14 青龙集", "straight_km": 5, "road_km_est": 7, "rail_km_est": null, "note": ""},
+      {"from": "P04 陈官庄", "to": "P15 郭楼", "straight_km": 2, "road_km_est": 3, "rail_km_est": null, "note": "与“郭楼位于陈官庄东南2公里”一致"},
+      {"from": "P06 宿县", "to": "P08 蒙城", "straight_km": 56, "road_km_est": 70, "rail_km_est": null, "note": ""},
+      {"from": "P08 蒙城", "to": "P09 涡阳", "straight_km": 42, "road_km_est": 50, "rail_km_est": null, "note": ""},
+      {"from": "P09 涡阳", "to": "P07 永城", "straight_km": 51, "road_km_est": 65, "rail_km_est": null, "note": ""},
+      {"from": "P06 宿县", "to": "P19 固镇", "straight_km": 47, "road_km_est": 50, "rail_km_est": 50, "note": ""},
+      {"from": "P19 固镇", "to": "P05 蚌埠", "straight_km": 45, "road_km_est": 50, "rail_km_est": 50, "note": ""},
+      {"from": "P10 宿迁", "to": "P11 新安镇", "straight_km": 46, "road_km_est": 55, "rail_km_est": null, "note": ""},
+      {"from": "P10 宿迁", "to": "P02 碾庄", "straight_km": 60, "road_km_est": 75, "rail_km_est": null, "note": ""},
+      {"from": "P01 徐州", "to": "P10 宿迁", "straight_km": 107, "road_km_est": 130, "rail_km_est": null, "note": ""},
+      {"from": "P01 徐州", "to": "P20 商丘", "straight_km": 142, "road_km_est": 170, "rail_km_est": 165, "note": ""},
+      {"from": "P01 徐州", "to": "P17 邳州", "straight_km": 72, "road_km_est": 80, "rail_km_est": 75, "note": ""}
+    ]
+  },
+
+  "march_rates": {
+    "note": "以下为一般军事经验值/估算，不是淮海战役逐日实测数据，仅供游戏单位移动速度参考。实际速度受道路、天气、敌情、桥梁拥堵影响，可能低于下限。",
+    "infantry_normal_km_day": [25, 35],
+    "infantry_forced_km_day": [40, 60],
+    "cavalry_km_day": [40, 60],
+    "mule_pack_km_day": [25, 35],
+    "motor_convoy_clear_km_day": [50, 70],
+    "motor_convoy_mud_km_day": [20, 30],
+    "night_march_km_night": [20, 30],
+    "historical_examples": [
+      {
+        "event": "黄百韬第七兵团新安镇—碾庄西撤",
+        "distance_km": 54,
+        "elapsed": "1948-11-07 至 11-09，约 2–3 日",
+        "implied_km_day": [18, 27],
+        "note": "受中运河铁桥拥堵、降雨泥泞与携带随军人员影响，行军显著慢于常行军速度；据 S24/S27 文字概括，未逐日核实"
+      },
+      {
+        "event": "华东野战军追击黄百韬兵团",
+        "distance_km": "约 50–110",
+        "elapsed": "1948-11-07 至 11-11，约 4–5 日",
+        "implied_km_day": [20, 30],
+        "note": "追击部队从陇海线南北多路南下，实际日行程差异很大；估算"
+      },
+      {
+        "event": "中原野战军由豫西东进至涡河、浍河线",
+        "distance_km": "约 200–300",
+        "elapsed": "约 10 余日",
+        "implied_km_day": [20, 30],
+        "note": "未核实，仅作数量级参考"
+      },
+      {
+        "event": "杜聿明集团徐州—陈官庄西撤",
+        "distance_km": 62,
+        "elapsed": "1948-11-30 至 12-04，约 4–5 日",
+        "implied_km_day": [12, 16],
+        "note": "约 30 万人及大量车辆、辎重，道路拥挤、雨雪泥泞，速度很低；据 S01/S11 文字概括"
+      }
+    ]
+  },
+
+  "climate": {
+    "season": "1948-11 至 1949-01",
+    "normal_climate_estimate": {
+      "nov_mean_temp_c": [8, 11],
+      "dec_mean_temp_c": [1, 3],
+      "jan_mean_temp_c": [-1, 1],
+      "monthly_precip_mm": [15, 30],
+      "confidence": "low",
+      "note": "黄淮平原气候常年值，属估算/待核；未逐项核对 1948–1949 年气象站记录。"
+    },
+    "observed_events": [
+      {
+        "date_range": "1948-12-19 至 1948-12-28",
+        "event": "大雪",
+        "impact": "国民党空军空投与突围计划受阻；包围圈内粮弹断绝，冻饿死伤，十余日内 1 万余人向解放军投降",
+        "confidence": "high",
+        "source_ids": ["S08", "S11"]
+      },
+      {
+        "date_range": "1948-12 中下旬",
+        "event": "雨雪交加、气温骤降",
+        "impact": "道路泥泞或结冰，汽车、重炮与辎重机动困难",
+        "confidence": "high",
+        "source_ids": ["S08", "S21"]
+      },
+      {
+        "date_range": "1948-11 上中旬",
+        "event": "降雨（具体日期未逐日核实）",
+        "impact": "道路泥泞；黄百韬兵团渡中运河仅一座铁桥，行军迟缓",
+        "confidence": "medium",
+        "source_ids": ["S24", "S27"]
+      }
+    ],
+    "gameplay_note": "11 月以泥泞为主，12 月下旬至 1 月以严寒、积雪、结冰为主；雾、雪会降低能见度。车辆越野能力应显著下降，后勤与空投受天气制约。"
+  },
+
+  "phases": [
+    {
+      "phase": 1,
+      "name": "围歼黄百韬兵团（第七兵团）",
+      "start_date": "1948-11-06",
+      "end_date": "1948-11-22",
+      "encirclement": {
+        "center": "P02 碾庄（碾庄圩）",
+        "extent": "以碾庄圩为中心，南北约 3 km、东西约 6 km",
+        "note": "S25 亲历者回忆：11-11 将黄百韬兵团 4 个军合围于碾庄圩为中心、南北 3 km、东西 6 km 区域。"
+      },
+      "blocking_positions": [
+        {"name": "大许家—麻谷子一线", "role": "徐东阻击战；阻邱清泉第二兵团、李弥第十三兵团东援", "dates": "1948-11-12 至 11-22", "confidence": "medium"},
+        {"name": "曹八集", "role": "切断黄百韬兵团西退徐州的道路", "dates": "1948-11-09 前后", "confidence": "high"},
+        {"name": "宿县", "role": "中野第三纵队攻克，切断徐州—蚌埠联系", "dates": "1948-11-15", "confidence": "high"}
+      ],
+      "pla_units": {
+        "summary": "华东野战军主力（山东兵团第7、9、13纵及鲁中南纵队等为围歼主力；第1、4、6、8、11纵等参加追击与阻援），中原野战军主力配合作战",
+        "strength_est": "华野约 40 余万人（含地方纵队）；参战兵力具体口径待核",
+        "confidence": "medium",
+        "source_ids": ["S01", "S24", "S25", "S19"]
+      },
+      "kmt_units": {
+        "summary": "第七兵团（司令官黄百韬）：第25、63、64、100军及第44军等",
+        "strength_est": "约 10 万–12 万人（不同资料口径不一）",
+        "confidence": "medium",
+        "source_ids": ["S01", "S24", "S25"]
+      },
+      "key_events": [
+        {"date": "1948-11-06", "event": "华东野战军分路南下，战役发起"},
+        {"date": "1948-11-08", "event": "何基沣、张克侠率第三绥靖区部队在贾汪、台儿庄起义，约 2 万余人"},
+        {"date": "1948-11-08 至 11-12", "event": "华野第一纵队在窑湾歼灭第63军约 1.37 万人"},
+        {"date": "1948-11-11", "event": "黄百韬兵团 4 个军被合围于碾庄圩地区"},
+        {"date": "1948-11-12 至 11-22", "event": "徐东阻击战；围歼碾庄逐村争夺"},
+        {"date": "1948-11-22", "event": "全歼第七兵团，黄百韬自杀/阵亡（死因口径不一）"}
+      ],
+      "outcome": "歼国民党军第七兵团等部约 10 万余人；黄百韬兵团覆灭",
+      "source_ids": ["S01", "S05", "S24", "S25", "S09"],
+      "confidence": "high"
+    },
+    {
+      "phase": 2,
+      "name": "双堆集围歼黄维兵团（第十二兵团）",
+      "start_date": "1948-11-23",
+      "end_date": "1948-12-15",
+      "encirclement": {
+        "center": "P03 双堆集",
+        "extent": "以双堆集为中心，纵横约 7.5 km；最后阶段被压缩在双堆集、大小马庄、杨子秀庄等东西不足 3 华里的狭长地区",
+        "note": "S15 称 11-25 晨完成包围，纵横约 7.5 公里；S01 称最后阶段不足 3 华里。"
+      },
+      "blocking_positions": [
+        {"name": "蚌埠—固镇以北", "role": "阻李延年第六兵团、刘汝明第八兵团由蚌埠北援", "dates": "1948-11 下旬至 12 中旬", "confidence": "medium"},
+        {"name": "涡河、浍河一线", "role": "中野沿途阻击黄维兵团东进", "dates": "1948-11 中下旬", "confidence": "medium"}
+      ],
+      "pla_units": {
+        "summary": "中原野战军全部（第1、2、3、4、6、9、11纵）及华东野战军一部（第3、7、13纵及特种兵纵队等）",
+        "strength_est": "中野约 12 万–15 万人；华野参战一部，具体兵力待核",
+        "confidence": "medium",
+        "source_ids": ["S01", "S05", "S15", "S30"]
+      },
+      "kmt_units": {
+        "summary": "第十二兵团（司令官黄维，副司令胡琏、吴绍周）：第10、14、18、85军等",
+        "strength_est": "约 10 万–12 万人（不同资料口径不一）",
+        "confidence": "medium",
+        "source_ids": ["S01", "S15", "S30"]
+      },
+      "key_events": [
+        {"date": "1948-11-23", "event": "中野发起攻击，黄维兵团向宿县方向推进"},
+        {"date": "1948-11-25", "event": "中野将黄维兵团包围于双堆集地区"},
+        {"date": "1948-11-27", "event": "第85军第110师师长廖运周率部起义"},
+        {"date": "1948-12-05", "event": "总前委下达总攻命令"},
+        {"date": "1948-12-06", "event": "大王庄血战；华野七纵、中野六纵等争夺双堆集南侧屏障"},
+        {"date": "1948-12-15", "event": "全歼第十二兵团，生俘黄维、吴绍周"}
+      ],
+      "outcome": "歼国民党军第十二兵团约 10 万余人；黄维被俘",
+      "source_ids": ["S01", "S05", "S15", "S30", "S24"],
+      "confidence": "high"
+    },
+    {
+      "phase": 3,
+      "name": "陈官庄围歼杜聿明集团",
+      "start_date": "1948-12-16",
+      "end_date": "1949-01-10",
+      "encirclement": {
+        "center": "P04 陈官庄",
+        "extent": "陈官庄、青龙集、李石林地区，南北约 5 km、东西约 10 km",
+        "note": "杜聿明集团于 1948-12-04 即被华野 11 个纵队包围；12-16 起为正式第三阶段（围困与总攻）。"
+      },
+      "blocking_positions": [
+        {"name": "郭楼（陈官庄东南约 2 km）", "role": "杜聿明集团向南突围必经之地；华野第二纵队等组织纵深防御", "dates": "1948-12 中下旬", "confidence": "medium"},
+        {"name": "鲁楼", "role": "华野第十纵队阵地，阻击邱清泉兵团沿引河突围", "dates": "1948-12 上旬", "confidence": "low"}
+      ],
+      "pla_units": {
+        "summary": "华东野战军 11 个纵队（第1、2、3、4、8、9、10、11、12纵及特纵等）；中原野战军一部监视蚌埠方向",
+        "strength_est": "华野参战约 30 万–40 万人；具体口径待核",
+        "confidence": "medium",
+        "source_ids": ["S01", "S11", "S14", "S28"]
+      },
+      "kmt_units": {
+        "summary": "杜聿明集团：第二兵团（邱清泉）、第十三兵团（李弥）、第十六兵团（孙元良），共约 30 万人（含机关、随军人员）",
+        "strength_est": "约 30 万人（战斗兵员少于该数）",
+        "confidence": "medium",
+        "source_ids": ["S01", "S11", "S24"]
+      },
+      "key_events": [
+        {"date": "1948-11-30", "event": "杜聿明率第二、十三、十六兵团等约 30 万人放弃徐州，向西撤逃"},
+        {"date": "1948-12-01", "event": "徐州弃守"},
+        {"date": "1948-12-04", "event": "华野 11 个纵队将杜聿明集团包围于陈官庄、青龙集、李石林地区"},
+        {"date": "1948-12-06", "event": "孙元良第十六兵团突围，被全歼"},
+        {"date": "1948-12-19 至 12-28", "event": "大雪，空投中断，包围圈内粮弹断绝，1 万余人投降"},
+        {"date": "1949-01-06", "event": "华野发起总攻（约 15:30）"},
+        {"date": "1949-01-10", "event": "全歼杜聿明集团；生俘杜聿明，击毙邱清泉，李弥等少数人逃脱"}
+      ],
+      "outcome": "歼国民党军第二、第十三、第十六兵团等约 20 万人；杜聿明被俘，邱清泉被击毙",
+      "source_ids": ["S01", "S05", "S11", "S14", "S29"],
+      "confidence": "high"
+    }
+  ],
+
+  "forces_overview": {
+    "pla_total": {"value": "约 60 万人", "composition": "华东野战军 40 余万人、中原野战军约 12 万–15 万人、华东/中原军区地方部队及冀鲁豫军区一部", "confidence": "high", "source_ids": ["S02", "S03", "S19"]},
+    "kmt_total": {"value": "约 80 万人", "composition": "徐州“剿总”刘峙集团 5 个兵团及多个绥靖区，加上华中“剿总”黄维第十二兵团", "confidence": "high", "source_ids": ["S02", "S03", "S24"]},
+    "command": {
+      "pla": "总前委：刘伯承、陈毅、邓小平、粟裕、谭震林（邓小平为书记）",
+      "kmt": "徐州“剿总”总司令刘峙，副总司令杜聿明（战役后期实际指挥）",
+      "source_ids": ["S01", "S05", "S24"],
+      "confidence": "high"
+    },
+    "kmt_order_of_battle": [
+      {"unit": "第二兵团", "commander": "邱清泉", "fate": "陈官庄被歼，邱清泉被击毙"},
+      {"unit": "第六兵团", "commander": "李延年", "fate": "蚌埠方向，未被全歼，后南撤"},
+      {"unit": "第七兵团", "commander": "黄百韬", "fate": "碾庄被歼，黄百韬自杀/阵亡"},
+      {"unit": "第八兵团", "commander": "刘汝明", "fate": "蚌埠方向，未被全歼，后南撤"},
+      {"unit": "第十二兵团", "commander": "黄维", "fate": "双堆集被歼，黄维被俘"},
+      {"unit": "第十三兵团", "commander": "李弥", "fate": "陈官庄被歼，李弥逃脱"},
+      {"unit": "第十六兵团", "commander": "孙元良", "fate": "陈官庄突围时被歼，孙元良逃脱"},
+      {"unit": "第三绥靖区", "commander": "冯治安（副司令何基沣、张克侠）", "fate": "何基沣、张克侠率部起义"}
+    ],
+    "note": "兵团番号与主官据公开资料整理；各兵团下属军、师序列在不同资料中存在差异，未逐项展开。"
+  },
+
+  "casualties": {
+    "kmt_losses": {
+      "value": "55.5 万余人",
+      "composition": "1 个“剿总”前进指挥部、5 个兵团部、22 个军部、56 个师（内 4.5 个师起义）",
+      "confidence": "high",
+      "source_ids": ["S04", "S06", "S01"],
+      "note": "“55.5 万”为大陆军史/党史通用口径，含毙伤俘与起义。"
+    },
+    "pla_losses": {
+      "value": "13 万余人",
+      "range": "11 万–13.6 万（不同资料口径）",
+      "detail_if_any": "有资料给出：阵亡 25,954 人、负伤 98,818 人、失踪 11,752 人，合计约 13.6 万（S34 百科，属二次线索，未以军史原书核对）",
+      "confidence": "medium",
+      "source_ids": ["S04", "S24", "S34"],
+      "note": "人民网党史频道一篇文章称“伤亡 11 万余人”，央视/党史常用“13 万余人”，百科口径 13.6 万。游戏内建议采用“约 13 万”并注明口径差异。"
+    },
+    "support": {
+      "value": "支前民工 543 万人次",
+      "details": "担架 20.6 万副、大小车 88.1 万辆、挑子 30.5 万副、牲畜 76.7 万头、船只 8500 余艘、汽车 257 辆",
+      "grain": "粮食 4.3 亿斤（人民网 S21）与 9.6 亿斤（百科/江苏档案 S20、S34）口径不一，未核实",
+      "confidence": "medium",
+      "source_ids": ["S20", "S21", "S26"]
+    },
+    "duration_days": 66
+  },
+
+  "limitations": [
+    "不能支撑逐日逐团位置：本表只有兵团/军级番号与阶段级部署，团级仅有窑湾、大王庄、郭楼等少数点名战斗。",
+    "不能支撑精确战壕线、地堡坐标：只有碾庄圩外壕宽 30–50 m、深约 2 m、土堤 1–2.5 m 等定性/工程尺寸描述，无测绘坐标。",
+    "不能支撑 1948 年土地利用与地块级地形：缺 1:5 万或更大比例尺历史军用地形图；现代 DEM/影像中的采煤塌陷区、城镇扩张、河道治理与 1948 年差异显著。",
+    "不能支撑自然村级定位：多数地点只能定位到今乡镇政府驻地，1948 年自然村名称、位置与今行政村存在合并/搬迁差异。",
+    "不能支撑逐日气象：仅有 12-19 至 12-28 大雪等少数明确记载；11 月降雨的具体日期、气温、风向未逐日核实。",
+    "不能支撑各兵团精确兵力：黄百韬兵团 10 万/12 万、黄维兵团 10 万/12 万、杜聿明集团 30 万（含非战斗人员）等口径不一。",
+    "不能支撑地图图面复现：受版权与审图限制，未复制《中国共产党100年地图集》之《淮海战役要图》（审图号 GS(2021)3573号）及纪念馆沙盘/展板图面，不能作为底图或描摹依据。",
+    "不能支撑水系微观形态：河流宽度、深度、桥梁位置多为估算；1948 年河道断面、渡口与临时桥梁位置未逐段核实。"
+  ],
+
+  "sources": [
+    {"id": "S01", "title": "淮海战役：加速解放战争进程的决战", "org": "中华人民共和国国防部", "url": "https://www.mod.gov.cn/gfbw/gfjy_index/16089870.html", "type": "官方", "used_for": "三阶段日期、包围地域、兵团番号、战果"},
+    {"id": "S02", "title": "淮海战役：以60万战胜80万的战争奇迹", "org": "中华人民共和国国防部", "url": "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4834146.html", "type": "官方", "used_for": "60 万对 80 万总兵力对比"},
+    {"id": "S03", "title": "淮海战役", "org": "中国共产党新闻网", "url": "https://cpc.people.com.cn/GB/33837/2534619.html", "type": "官方/党史", "used_for": "国民党军 5 个兵团约 80 万、战役背景"},
+    {"id": "S04", "title": "中国共产党大事记·1949年", "org": "中国共产党新闻网", "url": "https://cpc.people.com.cn/GB/64162/64164/4416007.html", "type": "官方/党史", "used_for": "歼敌 55.5 万（5 兵团部、22 军部、56 师）、我方伤亡 13 万"},
+    {"id": "S05", "title": "淮海战役", "org": "中共中央党史和文献研究院", "url": "https://www.dswxyjy.org.cn/n/2015/0415/c244520-26848206.html", "type": "官方/党史", "used_for": "三阶段起止日期、双堆集与陈官庄战果"},
+    {"id": "S06", "title": "粟裕建议和参与指挥淮海战役的前前后后", "org": "人民网·党史频道", "url": "http://dangshi.people.com.cn/n1/2017/1208/c85037-29693886.html", "type": "官方/党史", "used_for": "66 天、歼敌 55.5 万、双堆集包围部署"},
+    {"id": "S07", "title": "碾庄之战，一场齐心协力的合围", "org": "人民网·军事", "url": "http://military.people.com.cn/n1/2021/0706/c1011-32149633.html", "type": "官方", "used_for": "运河铁桥、圩寨地形、碾庄战场"},
+    {"id": "S08", "title": "盘点淮海战役中有利天气因素：大雾 大雨 大雪", "org": "人民网·文化", "url": "http://culture.people.com.cn/n/2015/0423/c172318-26894750.html", "type": "官方", "used_for": "1948-12-19 至 12-28 大雪、空投中断、万余人投降"},
+    {"id": "S09", "title": "华野一纵窑湾追歼敌“劲旅”", "org": "人民网·党史学习教育", "url": "http://dangshi.people.com.cn/n1/2021/0401/c436975-32066806.html", "type": "官方/党史", "used_for": "窑湾战斗、歼第63军 1.37 万余人"},
+    {"id": "S10", "title": "能打仗善打仗的韦国清上将", "org": "人民网·中国共产党新闻网", "url": "http://cpc.people.com.cn/n1/2022/0627/c443712-32457124.html", "type": "官方/党史", "used_for": "郭楼位于陈官庄东南 2 km、第二纵队防御"},
+    {"id": "S11", "title": "陈官庄战役：战壕中迎新年", "org": "中国军网", "url": "http://www.81.cn/js_208592/jdt_208593/10210150.html", "type": "官方/军媒", "used_for": "陈官庄包围圈南北 5 km、东西不足 10 km；12-04 合围"},
+    {"id": "S12", "title": "新四军老战士顾展宏：“我在淮海前线入了党”", "org": "中国军网", "url": "http://www.81.cn/rw_208598/10029127.html", "type": "官方/军媒", "used_for": "郭楼为敌南进要冲、堑壕防御"},
+    {"id": "S13", "title": "战地记者追寻人民军队战斗步伐：碾庄之战", "org": "中华人民共和国国防部", "url": "http://www.mod.gov.cn/gfbw/gfjy_index/zyhd/4888766.html", "type": "官方", "used_for": "碾庄圩模型、水壕与土墙的公开描述"},
+    {"id": "S14", "title": "数字背后的淮海战役：交通壕长达12万米", "org": "新华网", "url": "https://www.xinhuanet.com/mil/2021-01/21/c_1210988510.htm", "type": "官方/媒体", "used_for": "12-04 包围陈官庄、鲁楼阵地、交通壕"},
+    {"id": "S15", "title": "双堆集歼灭战", "org": "淮北党史和地方志网", "url": "http://dsdfz.huaibei.gov.cn/dhl/txhb/fhsy/17963071.html", "type": "官方/地方志", "used_for": "11-25 包围、纵横约 7.5 km、双堆集平原无隐蔽物"},
+    {"id": "S16", "title": "陈官庄乡基本情况", "org": "永城市人民政府", "url": "https://www.ycs.gov.cn/xzxxgk/cgzz/fdzdgknr551/jgzn561/xzjj281/content_15945", "type": "官方/地方政府", "used_for": "郭楼为陈官庄乡行政村、王引河、乡域位置"},
+    {"id": "S17", "title": "萧县青龙集镇简介", "org": "萧县人民政府", "url": "https://www.ahxx.gov.cn/public/261/143519301.html", "type": "官方/地方政府", "used_for": "青龙集位置、皖豫交界、面积 36 km²"},
+    {"id": "S18", "title": "江苏红色历史：首战窑湾", "org": "学习强国", "url": "https://www.xuexi.cn/lgpage/detail/index.html?id=8641132544495193506", "type": "官方/党史", "used_for": "窑湾战斗、第63军 13000 余人被歼"},
+    {"id": "S19", "title": "淮海战役简介", "org": "徐州工程学院", "url": "https://szb.xzit.edu.cn/_t34/67/9d/c904a26525/page.htm", "type": "学术/院校", "used_for": "华野 16 个纵队加 4 个旅 40 多万人、兵团序列"},
+    {"id": "S20", "title": "淮海战役支前：“小推车”推出来的战争奇迹", "org": "江苏档案信息网", "url": "https://www.dajs.gov.cn/art/2020/4/13/art_120_10020.html", "type": "官方/档案", "used_for": "543 万民工、88 万余辆小车、20.6 万副担架、9.6 亿斤粮食"},
+    {"id": "S21", "title": "淮海战役，小车推出来的胜利", "org": "人民网·党史学习教育", "url": "http://dangshi.people.com.cn/n1/2021/0425/c436975-32087269.html", "type": "官方/党史", "used_for": "支前数据（粮食 4.3 亿斤，与 S20 口径不同）"},
+    {"id": "S22", "title": "在这里，读懂“人民的胜利”（你所不知道的一级馆）", "org": "人民日报海外版", "url": "http://paper.people.com.cn/rmrbhwb/pad/content/202511/25/content_30116667.html", "type": "官方媒体", "used_for": "淮海战役纪念馆 1965 年建成、2007 年新馆、2021 年改陈"},
+    {"id": "S23", "title": "身边的红色地标｜淮海战役纪念馆：凤凰山下，读懂“人民的胜利”", "org": "新华网", "url": "http://csj.xinhuanet.com/20260923/be07d451aeca41bca1e41518a7f60e1b/c.html", "type": "官方媒体", "used_for": "纪念馆位于徐州凤凰山麓、建馆沿革"},
+    {"id": "S24", "title": "淮海战役纵览", "org": "央视网", "url": "https://news.cctv.com/military/20090410/114971.shtml", "type": "官方媒体", "used_for": "三阶段概述、11-08 起义、11-22 歼黄百韬、12-01 弃徐州"},
+    {"id": "S25", "title": "震撼世界的战争奇迹——纪念淮海战役60周年", "org": "央视网", "url": "http://news.cctv.cn/china/20090211/101702.shtml", "type": "官方媒体", "used_for": "碾庄包围圈南北 3 km、东西 6 km；4 个军被合围"},
+    {"id": "S26", "title": "迟浩田：淮海战役亲历记", "org": "央视网", "url": "https://news.cctv.com/science/20090113/104696.shtml", "type": "官方媒体/亲历", "used_for": "碾庄圩内外两道土圩、外壕宽 30–50 m 深约 2 m、土堤 1–2.5 m"},
+    {"id": "S27", "title": "淮海战役中黄百韬、邱清泉死因之谜", "org": "中国新闻网", "url": "http://www.chinanews.com.cn/cul/2011/07-12/3175026.shtml", "type": "媒体（需二次核对）", "used_for": "碾庄圩位于陇海线北侧 1 km、西距徐州约 75 km；铁桥撤退"},
+    {"id": "S28", "title": "淮海战役中的韦国清：会歼杜聿明集团", "org": "中国新闻网", "url": "http://www.chinanews.com.cn/cul/news/2009/10-19/1917503.shtml", "type": "媒体（需二次核对）", "used_for": "苏北兵团 2、8、11 纵由西南向东北攻击陈官庄"},
+    {"id": "S29", "title": "河南永城：在红色热土上书写“鱼水新篇”", "org": "中华人民共和国国防部", "url": "http://www.mod.gov.cn/gfbw/gfdy/zzdy/4843100.html", "type": "官方", "used_for": "1949-01-06 总攻、01-10 结束、歼 3 个兵团 26 个师"},
+    {"id": "S30", "title": "运筹帷幄战淮海", "org": "安徽省党史/地方政府网站", "url": "http://www.anhuids.gov.cn/Micro/Content/17248", "type": "官方/党史", "used_for": "黄维兵团 4 个军 11 个师 10 万余人、12-05 总攻"},
+    {"id": "S31", "title": "《中国共产党100年地图集》所载《淮海战役要图》", "org": "地图集（审图号 GS(2021)3573号）", "url": null, "type": "书目引用", "used_for": "仅作为图名/审图号出处标注；未查阅图面、未复制、未描摹"},
+    {"id": "S32", "title": "淮海战役纪念馆（徐州）基本陈列“人民的胜利”及沙盘/展板", "org": "淮海战役纪念馆", "url": null, "type": "机构公开信息", "used_for": "仅参考公开文字描述与建馆信息；未复制沙盘、展板图像"},
+    {"id": "S33", "title": "Bigemap / maps4gis / bmcx / abcdtools / 高德 POI 等商业地图坐标", "org": "商业地图服务", "url": null, "type": "工具/参考", "used_for": "乡镇政府驻地、部分村庄坐标；非权威，误差 ±0.02°–0.05°"},
+    {"id": "S34", "title": "百科类条目（淮海战役、碾庄战役、双堆集、陈官庄战役、第十二兵团等）", "org": "baike.com 等", "url": null, "type": "百科（仅线索）", "used_for": "交叉线索与数字对照；未作为唯一依据，需二次核对"},
+    {"id": "S35", "title": "手机新浪网等自媒体转载文章", "org": "门户/自媒体", "url": null, "type": "不可用（纯自媒体）", "used_for": "仅用于发现线索，未采信任何数字或表述"}
+  ]
+}

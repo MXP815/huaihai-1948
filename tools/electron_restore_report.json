@@ -1,0 +1,34 @@
+{
+  "mode": "restore",
+  "coldStartMs": 234,
+  "softwareRendering": true,
+  "apiBase": "http://localhost:8080/api",
+  "reference": {
+    "t": 121.59679999999977,
+    "phase": 1,
+    "pla": 22,
+    "enemyLog": 0,
+    "logs": 63,
+    "divergences": 0
+  },
+  "diff": {
+    "t": "same",
+    "phase": "same",
+    "pla": "same",
+    "enemyLog": "same",
+    "logs": "same",
+    "divergences": "same",
+    "flags": "same",
+    "casualties": "same"
+  },
+  "gameplayFieldsSame": true,
+  "toast": "已从数据库恢复：第 1 阶段 · 1948.11.11 00:00（v4），战局暂停",
+  "after": {
+    "t": 121.59679999999977,
+    "phase": 1,
+    "pla": 22,
+    "enemyLog": 0,
+    "logs": 63,
+    "divergences": 0
+  }
+}

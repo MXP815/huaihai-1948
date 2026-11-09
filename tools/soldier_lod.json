@@ -1,0 +1,136 @@
+{
+  "setup": {
+    "unit": "4纵",
+    "strength": 28000,
+    "cx": 136,
+    "cz": -44,
+    "pla": 22,
+    "kmt": 9
+  },
+  "shots": [
+    {
+      "lod": "far",
+      "dist": 160,
+      "expectLod": 0,
+      "soldierLod": 0,
+      "soldiers": 0,
+      "soldierUnits": 0,
+      "soldierInstances": 0,
+      "instances": 2127,
+      "draws": 50,
+      "tris": 118058,
+      "fps": 60.8,
+      "frameMs": 16.5,
+      "quality": "high",
+      "canvas": [
+        1600,
+        900
+      ],
+      "effDpr": 1
+    },
+    {
+      "lod": "mid",
+      "dist": 100,
+      "expectLod": 1,
+      "soldierLod": 1,
+      "soldiers": 246,
+      "soldierUnits": 31,
+      "soldierInstances": 738,
+      "instances": 2834,
+      "draws": 50,
+      "tris": 126542,
+      "fps": 59.6,
+      "frameMs": 16.8,
+      "quality": "high",
+      "canvas": [
+        1600,
+        900
+      ],
+      "effDpr": 1
+    },
+    {
+      "lod": "near",
+      "dist": 56,
+      "expectLod": 2,
+      "soldierLod": 2,
+      "soldiers": 654,
+      "soldierUnits": 31,
+      "soldierInstances": 3294,
+      "instances": 4848,
+      "draws": 50,
+      "tris": 150710,
+      "fps": 60.8,
+      "frameMs": 16.5,
+      "quality": "high",
+      "canvas": [
+        1600,
+        900
+      ],
+      "effDpr": 1
+    },
+    {
+      "lod": "close",
+      "dist": 30,
+      "expectLod": 2,
+      "soldierLod": 2,
+      "soldiers": 654,
+      "soldierUnits": 31,
+      "soldierInstances": 3294,
+      "instances": 4848,
+      "draws": 50,
+      "tris": 150710,
+      "fps": 59.8,
+      "frameMs": 16.7,
+      "quality": "high",
+      "canvas": [
+        1600,
+        900
+      ],
+      "effDpr": 1
+    },
+    {
+      "lod": "kinds",
+      "dist": 14,
+      "expectLod": 2,
+      "soldierLod": 2,
+      "soldiers": 654,
+      "soldierUnits": 31,
+      "soldierInstances": 3294,
+      "instances": 4848,
+      "draws": 50,
+      "tris": 150710,
+      "fps": 60.6,
+      "frameMs": 16.5,
+      "quality": "high",
+      "canvas": [
+        1600,
+        900
+      ],
+      "effDpr": 1
+    },
+    {
+      "lod": "infantry",
+      "dist": 11,
+      "expectLod": 2,
+      "soldierLod": 2,
+      "soldiers": 654,
+      "soldierUnits": 31,
+      "soldierInstances": 3294,
+      "instances": 4848,
+      "draws": 50,
+      "tris": 150710,
+      "fps": 59.7,
+      "frameMs": 16.8,
+      "quality": "high",
+      "canvas": [
+        1600,
+        900
+      ],
+      "effDpr": 1
+    }
+  ],
+  "errors": [
+    "CONSOLE: Access to fetch at 'http://localhost:8080/api/saves' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "CONSOLE: Failed to load resource: net::ERR_FAILED"
+  ]
+}

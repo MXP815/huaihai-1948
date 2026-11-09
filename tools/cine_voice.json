@@ -1,0 +1,252 @@
+[
+  {
+    "file": "prologue-s1-c1.wav",
+    "text": "十一月六日，华东野战军分路南下。淮海战役从这一天开始。",
+    "cinematic": "prologue",
+    "index": 0,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.11.06",
+    "place": "徐州以东 · 新安镇方向"
+  },
+  {
+    "file": "prologue-s2-c1.wav",
+    "text": "徐州以东，黄百韬的第七兵团正沿陇海线向西收缩。",
+    "cinematic": "prologue",
+    "index": 0,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.11.06",
+    "place": "徐州以东 · 新安镇方向"
+  },
+  {
+    "file": "prologue-s3-c1.wav",
+    "text": "六十万对八十万，是概数。胜负从来不是算术。",
+    "cinematic": "prologue",
+    "index": 0,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.11.06",
+    "place": "徐州以东 · 新安镇方向"
+  },
+  {
+    "file": "nianzhuang_open-s1-c1.wav",
+    "text": "十一月十一日，第七兵团四个军被合围在碾庄圩。",
+    "cinematic": "nianzhuang_open",
+    "index": 1,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.11.11",
+    "place": "碾庄圩 · 运河以西"
+  },
+  {
+    "file": "nianzhuang_open-s2-c1.wav",
+    "text": "运河截断退路，外围的村子一个接一个被拿下。",
+    "cinematic": "nianzhuang_open",
+    "index": 1,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.11.11",
+    "place": "碾庄圩 · 运河以西"
+  },
+  {
+    "file": "nianzhuang_open-s3-c1.wav",
+    "text": "口袋扎紧了。碾庄不只是一个地名。",
+    "cinematic": "nianzhuang_open",
+    "index": 1,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.11.11",
+    "place": "碾庄圩 · 运河以西"
+  },
+  {
+    "file": "nianzhuang_close-s1-c1.wav",
+    "text": "十一月十二日起，碾庄逐村争夺，土墙与交通壕之间反复拉锯。",
+    "cinematic": "nianzhuang_close",
+    "index": 2,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.11.22",
+    "place": "碾庄圩 · 近迫作业之后"
+  },
+  {
+    "file": "nianzhuang_close-s2-c1.wav",
+    "text": "近迫作业，把战壕挖到敌人枪眼下面，一米一米往前挪。",
+    "cinematic": "nianzhuang_close",
+    "index": 2,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.11.22",
+    "place": "碾庄圩 · 近迫作业之后"
+  },
+  {
+    "file": "nianzhuang_close-s3-c1.wav",
+    "text": "二十二日黄昏，枪声停了。第七兵团覆灭。",
+    "cinematic": "nianzhuang_close",
+    "index": 2,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.11.22",
+    "place": "碾庄圩 · 近迫作业之后"
+  },
+  {
+    "file": "shuangduiji_open-s1-c1.wav",
+    "text": "十一月二十五日，中原野战军把黄维的第十二兵团围在双堆集。",
+    "cinematic": "shuangduiji_open",
+    "index": 3,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.11.25",
+    "place": "双堆集 · 浍河以南"
+  },
+  {
+    "file": "shuangduiji_open-s2-c1.wav",
+    "text": "纵横约七点五公里，一圈又一圈围沟。",
+    "cinematic": "shuangduiji_open",
+    "index": 3,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.11.25",
+    "place": "双堆集 · 浍河以南"
+  },
+  {
+    "file": "shuangduiji_open-s3-c1.wav",
+    "text": "不硬顶。放他进来，再卡住侧后。",
+    "cinematic": "shuangduiji_open",
+    "index": 3,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.11.25",
+    "place": "双堆集 · 浍河以南"
+  },
+  {
+    "file": "shuangduiji_uprising-s1-c1.wav",
+    "text": "十一月二十七日，第八十五军第一一〇师师长廖运周率部起义。",
+    "cinematic": "shuangduiji_uprising",
+    "index": 4,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.11.27",
+    "place": "双堆集以南 · 第八十五军阵地"
+  },
+  {
+    "file": "shuangduiji_uprising-s2-c1.wav",
+    "text": "起义部队从包围圈上走出去。那一夜，黄维的突围计划乱了。",
+    "cinematic": "shuangduiji_uprising",
+    "index": 4,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.11.27",
+    "place": "双堆集以南 · 第八十五军阵地"
+  },
+  {
+    "file": "shuangduiji_uprising-s3-c1.wav",
+    "text": "一个师的转向，比一个军的强攻更快。",
+    "cinematic": "shuangduiji_uprising",
+    "index": 4,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.11.27",
+    "place": "双堆集以南 · 第八十五军阵地"
+  },
+  {
+    "file": "chenguangzhuang_open-s1-c1.wav",
+    "text": "十二月四日，华野十一个纵队在陈官庄、青龙集、李石林合围杜聿明集团。",
+    "cinematic": "chenguangzhuang_open",
+    "index": 5,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.12.04",
+    "place": "陈官庄 / 青龙集 / 李石林"
+  },
+  {
+    "file": "chenguangzhuang_open-s2-c1.wav",
+    "text": "三十万人挤在东西十公里、南北五公里的圈子里。",
+    "cinematic": "chenguangzhuang_open",
+    "index": 5,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.12.04",
+    "place": "陈官庄 / 青龙集 / 李石林"
+  },
+  {
+    "file": "chenguangzhuang_open-s3-c1.wav",
+    "text": "不急着打。饥饿和寒冷，会替我们完成一半的包围。",
+    "cinematic": "chenguangzhuang_open",
+    "index": 5,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.12.04",
+    "place": "陈官庄 / 青龙集 / 李石林"
+  },
+  {
+    "file": "shuangduiji_close-s1-c1.wav",
+    "text": "十二月十五日，双堆集。第十二兵团被歼，黄维被俘。",
+    "cinematic": "shuangduiji_close",
+    "index": 6,
+    "shot": 1,
+    "caption": 1,
+    "date": "1948.12.15",
+    "place": "双堆集 · 大小马庄一带"
+  },
+  {
+    "file": "shuangduiji_close-s2-c1.wav",
+    "text": "第二阶段结束。中原野战军以弱于对手的火力，啃下了围沟。",
+    "cinematic": "shuangduiji_close",
+    "index": 6,
+    "shot": 2,
+    "caption": 1,
+    "date": "1948.12.15",
+    "place": "双堆集 · 大小马庄一带"
+  },
+  {
+    "file": "shuangduiji_close-s3-c1.wav",
+    "text": "从十一月六日到十二月十五日，淮河以北的态势已经改写。",
+    "cinematic": "shuangduiji_close",
+    "index": 6,
+    "shot": 3,
+    "caption": 1,
+    "date": "1948.12.15",
+    "place": "双堆集 · 大小马庄一带"
+  },
+  {
+    "file": "chenguangzhuang_close-s1-c1.wav",
+    "text": "一九四九年一月六日，总攻开始。东、南、北三面压进去，留西面。",
+    "cinematic": "chenguangzhuang_close",
+    "index": 7,
+    "shot": 1,
+    "caption": 1,
+    "date": "1949.01.10",
+    "place": "陈官庄 · 郭楼东南"
+  },
+  {
+    "file": "chenguangzhuang_close-s2-c1.wav",
+    "text": "十日拂晓，枪声由密转疏。雪地上出现成片的俘虏。",
+    "cinematic": "chenguangzhuang_close",
+    "index": 7,
+    "shot": 2,
+    "caption": 1,
+    "date": "1949.01.10",
+    "place": "陈官庄 · 郭楼东南"
+  },
+  {
+    "file": "chenguangzhuang_close-s3-c1.wav",
+    "text": "杜聿明被俘。六十六天，淮海战役结束。",
+    "cinematic": "chenguangzhuang_close",
+    "index": 7,
+    "shot": 3,
+    "caption": 1,
+    "date": "1949.01.10",
+    "place": "陈官庄 · 郭楼东南"
+  },
+  {
+    "file": "chenguangzhuang_close-s3-c2.wav",
+    "text": "歼敌五十五万五千人；我军伤亡十三万余人，资料口径为十一万至十三万六千。",
+    "cinematic": "chenguangzhuang_close",
+    "index": 7,
+    "shot": 3,
+    "caption": 2,
+    "date": "1949.01.10",
+    "place": "陈官庄 · 郭楼东南"
+  }
+]

@@ -1,0 +1,239 @@
+{
+  "tag": "before",
+  "cam": {
+    "yaw": 0.86,
+    "pitch": 0.72,
+    "dist": 118,
+    "pos": [
+      135.23054490743561,
+      80.62398396222156,
+      51.879734723685914
+    ],
+    "target": [
+      68,
+      2.8165926695877292,
+      -6
+    ]
+  },
+  "roundTrip": [
+    {
+      "id": "caoxu",
+      "name": "曹八集",
+      "world": {
+        "x": 58.8,
+        "z": -1.4
+      },
+      "screen": {
+        "x": 708.8,
+        "y": 436.2
+      },
+      "back": {
+        "x": 70.38,
+        "z": -18.2
+      },
+      "err": 20.4,
+      "dx": 11.58,
+      "dz": -16.8
+    },
+    {
+      "id": "jiazhuang",
+      "name": "贾汪",
+      "world": {
+        "x": 31.1,
+        "z": -25
+      },
+      "screen": {
+        "x": 724.2,
+        "y": 254
+      },
+      "back": {
+        "x": 64.19,
+        "z": -45.93
+      },
+      "err": 39.16,
+      "dx": 33.09,
+      "dz": -20.93
+    },
+    {
+      "id": "pizhou",
+      "name": "邳县",
+      "world": {
+        "x": 89.9,
+        "z": -7
+      },
+      "screen": {
+        "x": 959.8,
+        "y": 614.4
+      },
+      "back": {
+        "x": 58.78,
+        "z": 17.59
+      },
+      "err": 39.66,
+      "dx": -31.12,
+      "dz": 24.59
+    },
+    {
+      "id": "suqian",
+      "name": "宿迁",
+      "world": {
+        "x": 126.8,
+        "z": 41.7
+      },
+      "screen": {
+        "x": 839,
+        "y": 1438.9
+      },
+      "back": {
+        "x": 72.47,
+        "z": 45.53
+      },
+      "err": 54.47,
+      "dx": -54.33,
+      "dz": 3.83
+    }
+  ],
+  "clickTests": [
+    {
+      "unit": "特纵",
+      "placeId": "caoxu",
+      "placeName": "曹八集",
+      "placeWorld": {
+        "x": 58.8,
+        "z": -1.4
+      },
+      "screen": {
+        "x": 709,
+        "y": 470
+      },
+      "intendedWorld": [
+        62.036834236993016,
+        1.119190385008558
+      ],
+      "hitAt": null,
+      "sel": {
+        "ok": true,
+        "id": "hyte",
+        "sel": [
+          null
+        ]
+      },
+      "orderBefore": {
+        "short": "特纵",
+        "id": "hyte",
+        "x": 102,
+        "z": -48,
+        "dest": null,
+        "order": null,
+        "halted": false,
+        "path": null,
+        "pathIndex": 0,
+        "reroute": null,
+        "arrived": false
+      },
+      "orderAfter": {
+        "short": "特纵",
+        "id": "hyte",
+        "x": 95.806693297948,
+        "z": -41.40431916854432,
+        "dest": {
+          "x": 70.57631671205716,
+          "z": -14.534745413568942
+        },
+        "order": {
+          "type": "move",
+          "x": 70.57631671205716,
+          "z": -14.534745413568942,
+          "at": 14.133600000000014,
+          "ang": 0
+        },
+        "halted": false,
+        "path": null,
+        "pathIndex": 0,
+        "reroute": null,
+        "arrived": false
+      },
+      "destVsPlace": 17.64,
+      "destVsIntended": 17.83,
+      "routeLogNew": [],
+      "requests": [],
+      "lastLogs": [
+        "野司通报：7兵团 位于 新安镇 附近，估计 10 万，情报约 2 小时前。",
+        "命令：特纵 行军 → 碾庄。",
+        "三绥区 的情报已超过 12 小时未更新，可信度下降。"
+      ]
+    },
+    {
+      "unit": "10纵",
+      "placeId": "jiazhuang",
+      "placeName": "贾汪",
+      "placeWorld": {
+        "x": 31.1,
+        "z": -25
+      },
+      "screen": {
+        "x": 724,
+        "y": 288
+      },
+      "intendedWorld": [
+        36.92804219137081,
+        -20.403590470902344
+      ],
+      "hitAt": null,
+      "sel": {
+        "ok": true,
+        "id": "hy10",
+        "sel": [
+          null
+        ]
+      },
+      "orderBefore": {
+        "short": "10纵",
+        "id": "hy10",
+        "x": 96,
+        "z": -54,
+        "dest": null,
+        "order": null,
+        "halted": false,
+        "path": null,
+        "pathIndex": 0,
+        "reroute": null,
+        "arrived": false
+      },
+      "orderAfter": {
+        "short": "10纵",
+        "id": "hy10",
+        "x": 88.19038213161397,
+        "z": -50.55131183131752,
+        "dest": {
+          "x": 64.7685912258896,
+          "z": -40.20836617799584
+        },
+        "order": {
+          "type": "move",
+          "x": 64.7685912258896,
+          "z": -40.20836617799584,
+          "at": 22.399200000000036,
+          "ang": 0
+        },
+        "halted": false,
+        "path": null,
+        "pathIndex": 0,
+        "reroute": null,
+        "arrived": false
+      },
+      "destVsPlace": 36.95,
+      "destVsIntended": 34.17,
+      "routeLogNew": [],
+      "requests": [],
+      "lastLogs": [
+        "野司通报：7兵团 位于 窑湾 附近，估计 10 万，情报约 2 小时前。",
+        "命令：10纵 行军 → 台儿庄。",
+        "野司通报：7兵团 位于 新安镇 附近，估计 10 万，情报约 2 小时前。"
+      ]
+    }
+  ],
+  "errors": [
+    "CONSOLE: Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ]
+}

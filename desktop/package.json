@@ -1,0 +1,15 @@
+{
+  "name": "huaihai-1948-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "淮海战役 1948 桌面版（Electron 壳，加载本地构建产物）",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-packager . Huaihai1948 --platform=win32 --arch=x64 --out=release --overwrite --asar --ignore=\"release\""
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "@electron/packager": "^18.3.6"
+  }
+}

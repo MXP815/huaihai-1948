@@ -1,0 +1,639 @@
+{
+  "envData": {
+    "chapters": [
+      {
+        "id": 1,
+        "paletteId": "earth-green",
+        "terrain": "水网圩寨 · 村落攻坚",
+        "areaUnits": [
+          132,
+          96
+        ],
+        "areaKm": [
+          105.6,
+          76.8
+        ],
+        "treesInArea": 39,
+        "hydroMeshes": 15,
+        "heightRange": 5.98,
+        "waterCells": 147,
+        "samples": 149,
+        "cover": {
+          "trees": 1,
+          "treeInArea": 1,
+          "snow": 0,
+          "drifts": 0
+        },
+        "hydro": {
+          "rivers": null,
+          "canals": true,
+          "moat": true
+        },
+        "axes": [
+          "东北（邳县）",
+          "东南（运河桥）",
+          "西（曹八集）"
+        ],
+        "strongpoints": 0,
+        "airdrop": false
+      },
+      {
+        "id": 2,
+        "paletteId": "dust-grey",
+        "terrain": "开阔平原 · 猬集防御",
+        "areaUnits": [
+          120,
+          96
+        ],
+        "areaKm": [
+          96,
+          76.8
+        ],
+        "treesInArea": 0,
+        "hydroMeshes": 4,
+        "heightRange": 3.37,
+        "waterCells": 149,
+        "samples": 149,
+        "cover": {
+          "trees": 0.06,
+          "treeInArea": 0,
+          "snow": 0,
+          "drifts": 0
+        },
+        "hydro": {
+          "rivers": [
+            "浍河",
+            "涡河",
+            "包河",
+            "沱河"
+          ],
+          "canals": false,
+          "moat": false
+        },
+        "axes": [
+          "东北（宿县）",
+          "东南（固镇）",
+          "西（蒙城）"
+        ],
+        "strongpoints": 12,
+        "airdrop": false
+      },
+      {
+        "id": 3,
+        "paletteId": "snow-steel",
+        "terrain": "冬季野战 · 合围圈",
+        "areaUnits": [
+          84,
+          64
+        ],
+        "areaKm": [
+          67.2,
+          51.2
+        ],
+        "treesInArea": 0,
+        "hydroMeshes": 3,
+        "heightRange": 7.59,
+        "waterCells": 41,
+        "samples": 149,
+        "cover": {
+          "trees": 0.05,
+          "treeInArea": 0,
+          "snow": 1,
+          "drifts": 1
+        },
+        "hydro": {
+          "rivers": [
+            "王引河",
+            "浍河",
+            "包河"
+          ],
+          "canals": false,
+          "moat": false
+        },
+        "axes": [
+          "东（总攻）",
+          "南（总攻）",
+          "北（总攻）",
+          "西（可留缺口）"
+        ],
+        "strongpoints": 0,
+        "airdrop": true
+      }
+    ],
+    "encircle": {
+      "rx": 6.25,
+      "rz": 3.125,
+      "ewKm": 10,
+      "nsKm": 5
+    },
+    "palettesDiffer": true
+  },
+  "branches": {
+    "aOpen": {
+      "moves": {
+        "k12": {
+          "reactMode": "hedgehog",
+          "dest": null,
+          "movedUnit": 0.96,
+          "pos": [
+            -35,
+            120.3
+          ],
+          "entrench": 8,
+          "surrounded": true,
+          "cover": 8
+        },
+        "k2": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -65,
+            34.1
+          ],
+          "movedUnit": 67.08,
+          "pos": [
+            -42,
+            23.9
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k13": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -71,
+            38.1
+          ],
+          "movedUnit": 65.61,
+          "pos": [
+            -33.6,
+            24.6
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k16": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -68,
+            39.1
+          ],
+          "movedUnit": 70.92,
+          "pos": [
+            -58.2,
+            35.4
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "kzu": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -68,
+            36.1
+          ],
+          "movedUnit": 73.4,
+          "pos": [
+            -64.8,
+            34.4
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        }
+      },
+      "reactions": [
+        {
+          "id": "liao_defect",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 504,
+          "intelAge": 5,
+          "intelConf": 73,
+          "cover": 8,
+          "swBlocked": false
+        },
+        {
+          "id": "huangwei_hedgehog",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 466,
+          "intelAge": 6,
+          "intelConf": 78,
+          "cover": 7,
+          "swBlocked": false
+        },
+        {
+          "id": "xuzhou_retreat_sw",
+          "kmt": "kzu",
+          "status": "triggered",
+          "t": 462,
+          "intelAge": 5,
+          "intelConf": 76,
+          "cover": 0,
+          "swBlocked": false
+        }
+      ],
+      "flags": {
+        "xuzhouMode": "retreatSW",
+        "liaoDefect": true,
+        "liaoMissed": false
+      },
+      "t": 536,
+      "phase": 2
+    },
+    "aBlock": {
+      "moves": {
+        "k12": {
+          "reactMode": "hedgehog",
+          "dest": null,
+          "movedUnit": 0.96,
+          "pos": [
+            -35,
+            120.3
+          ],
+          "entrench": 8,
+          "surrounded": true,
+          "cover": 8
+        },
+        "k2": {
+          "reactMode": "breakoutSE",
+          "dest": [
+            11,
+            130
+          ],
+          "movedUnit": 72.48,
+          "pos": [
+            17,
+            66.5
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k13": {
+          "reactMode": "breakoutSE",
+          "dest": [
+            5,
+            134
+          ],
+          "movedUnit": 68.81,
+          "pos": [
+            18.7,
+            70.2
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k16": {
+          "reactMode": "breakoutSE",
+          "dest": [
+            8,
+            135
+          ],
+          "movedUnit": 72.38,
+          "pos": [
+            6.1,
+            82.4
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "kzu": {
+          "reactMode": "breakoutSE",
+          "dest": [
+            8,
+            132
+          ],
+          "movedUnit": 4,
+          "pos": [
+            -3.5,
+            1.9
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 2
+        }
+      },
+      "reactions": [
+        {
+          "id": "liao_defect",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 504,
+          "intelAge": 5,
+          "intelConf": 65,
+          "cover": 8,
+          "swBlocked": true
+        },
+        {
+          "id": "huangwei_hedgehog",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 466,
+          "intelAge": 6,
+          "intelConf": 78,
+          "cover": 7,
+          "swBlocked": true
+        },
+        {
+          "id": "xuzhou_breakout_se",
+          "kmt": "kzu",
+          "status": "triggered",
+          "t": 462,
+          "intelAge": 5,
+          "intelConf": 76,
+          "cover": 2,
+          "swBlocked": true
+        }
+      ],
+      "flags": {
+        "xuzhouMode": "breakoutSE",
+        "liaoDefect": true,
+        "liaoMissed": false
+      },
+      "t": 536,
+      "phase": 2
+    },
+    "bLoose": {
+      "moves": {
+        "k12": {
+          "reactMode": "breakoutSE",
+          "dest": [
+            8,
+            133
+          ],
+          "movedUnit": 6.7,
+          "pos": [
+            -29,
+            121.6
+          ],
+          "entrench": 2,
+          "surrounded": false,
+          "cover": 4
+        },
+        "k2": {
+          "reactMode": null,
+          "dest": null,
+          "movedUnit": 25.48,
+          "pos": [
+            43.3,
+            -2.9
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k13": {
+          "reactMode": null,
+          "dest": null,
+          "movedUnit": 15.57,
+          "pos": [
+            42.9,
+            -2.5
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k16": {
+          "reactMode": null,
+          "dest": null,
+          "movedUnit": 0,
+          "pos": [
+            8,
+            10
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "kzu": {
+          "reactMode": null,
+          "dest": null,
+          "movedUnit": 0,
+          "pos": [
+            0,
+            0
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        }
+      },
+      "reactions": [
+        {
+          "id": "liao_defect",
+          "kmt": "k12",
+          "status": "not_triggered",
+          "t": 516,
+          "intelAge": 5,
+          "intelConf": 75,
+          "cover": 4,
+          "swBlocked": false
+        },
+        {
+          "id": "huangwei_breakout_se",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 466,
+          "intelAge": 6,
+          "intelConf": 78,
+          "cover": 3,
+          "swBlocked": false
+        }
+      ],
+      "flags": {
+        "xuzhouMode": null,
+        "liaoDefect": false,
+        "liaoMissed": true
+      },
+      "t": 536,
+      "phase": 2
+    },
+    "bTight": {
+      "moves": {
+        "k12": {
+          "reactMode": "hedgehog",
+          "dest": null,
+          "movedUnit": 0.96,
+          "pos": [
+            -35,
+            120.3
+          ],
+          "entrench": 8,
+          "surrounded": true,
+          "cover": 8
+        },
+        "k2": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -65,
+            34.1
+          ],
+          "movedUnit": 67.08,
+          "pos": [
+            -42,
+            23.9
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k13": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -71,
+            38.1
+          ],
+          "movedUnit": 65.61,
+          "pos": [
+            -33.6,
+            24.6
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "k16": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -68,
+            39.1
+          ],
+          "movedUnit": 70.92,
+          "pos": [
+            -58.2,
+            35.4
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        },
+        "kzu": {
+          "reactMode": "retreatSW",
+          "dest": [
+            -68,
+            36.1
+          ],
+          "movedUnit": 73.4,
+          "pos": [
+            -64.8,
+            34.4
+          ],
+          "entrench": 1,
+          "surrounded": false,
+          "cover": 0
+        }
+      },
+      "reactions": [
+        {
+          "id": "liao_defect",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 504,
+          "intelAge": 5,
+          "intelConf": 73,
+          "cover": 8,
+          "swBlocked": false
+        },
+        {
+          "id": "huangwei_hedgehog",
+          "kmt": "k12",
+          "status": "triggered",
+          "t": 466,
+          "intelAge": 6,
+          "intelConf": 78,
+          "cover": 7,
+          "swBlocked": false
+        },
+        {
+          "id": "xuzhou_retreat_sw",
+          "kmt": "kzu",
+          "status": "triggered",
+          "t": 462,
+          "intelAge": 5,
+          "intelConf": 76,
+          "cover": 0,
+          "swBlocked": false
+        }
+      ],
+      "flags": {
+        "xuzhouMode": "retreatSW",
+        "liaoDefect": true,
+        "liaoMissed": false
+      },
+      "t": 536,
+      "phase": 2
+    },
+    "cDefect": {
+      "liaoDefect": true,
+      "liaoGap": true,
+      "strength": 102555,
+      "reactions": [
+        {
+          "id": "xuzhou_retreat_sw",
+          "status": "triggered",
+          "cover": 0,
+          "intelAge": 5
+        },
+        {
+          "id": "liao_defect",
+          "status": "triggered",
+          "cover": 6,
+          "intelAge": 4
+        }
+      ],
+      "assaultGap": 1.25
+    },
+    "cNo": {
+      "liaoDefect": false,
+      "liaoMissed": true,
+      "reactions": [
+        {
+          "id": "liao_defect",
+          "status": "not_triggered",
+          "cover": 3
+        },
+        {
+          "id": "huangwei_breakout_se",
+          "status": "triggered",
+          "cover": 2
+        }
+      ]
+    }
+  },
+  "regression": {
+    "moat": {
+      "timeMul": 2.78,
+      "impassable": true,
+      "w": 1.2
+    },
+    "hard": {
+      "pla": 240,
+      "kmt": 14300
+    },
+    "soft": {
+      "pla": 100,
+      "kmt": 26000
+    },
+    "pace": [
+      "从容",
+      "标准",
+      "紧迫"
+    ],
+    "save": {
+      "t": 123.5,
+      "phase": 2,
+      "restoredT": 123.5,
+      "restoredPhase": 2,
+      "enemyLog": 1,
+      "situations": 1
+    }
+  },
+  "errs": []
+}

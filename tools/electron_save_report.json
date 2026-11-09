@@ -1,0 +1,37 @@
+{
+  "mode": "save",
+  "coldStartMs": 528,
+  "softwareRendering": true,
+  "apiBase": "http://localhost:8080/api",
+  "toast": "",
+  "snapshot": {
+    "t": 121.59679999999977,
+    "phase": 1,
+    "pla": 22,
+    "enemyLog": 0,
+    "logs": 63,
+    "divergences": 0
+  },
+  "dbList": [
+    {
+      "slot": "manual",
+      "slotName": "第 1 阶段 · 1948.11.11 00:00",
+      "version": 4,
+      "campaignT": 121.59679999999977,
+      "phase": 1,
+      "stateBytes": 74246,
+      "createdAt": "2026-11-05T13:55:27.528Z",
+      "updatedAt": "2026-11-05T14:06:26.974Z"
+    }
+  ],
+  "dbRow": {
+    "slot": "manual",
+    "slotName": "第 1 阶段 · 1948.11.11 00:00",
+    "version": 4,
+    "campaignT": 121.59679999999977,
+    "phase": 1,
+    "stateBytes": 74246,
+    "updatedAt": "2026-11-05T14:06:26.974Z"
+  },
+  "dbStateMatchesUi": true
+}

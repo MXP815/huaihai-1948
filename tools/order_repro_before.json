@@ -1,0 +1,57 @@
+{
+  "tag": "before",
+  "steps": [],
+  "samples": [],
+  "errors": [
+    "CONSOLE: Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "deploy": {
+    "unit": null,
+    "count": 0,
+    "hour": 0.1311999999999971,
+    "date": "1948.11.06 00:00"
+  },
+  "afterSelect": {
+    "sel": [],
+    "pending": null,
+    "hour": 0.1311999999999971
+  },
+  "orderBefore": null,
+  "afterClickMove": {
+    "hour": 7.599199999999997,
+    "dest": null,
+    "halted": null,
+    "orderApplied": false,
+    "orderSrc": null,
+    "sel": []
+  },
+  "cineInterrupts": 0,
+  "tail": {
+    "hour": 2413.56,
+    "date": "1949.02.14 12:00",
+    "unit": null,
+    "dist": null,
+    "routeLog": [],
+    "requests": [
+      {
+        "kind": "need",
+        "unit": "hy2",
+        "text": "我纵伤亡已近 14%（阈值 14%），请求增援一个师，或允许整理后再战。",
+        "status": "open"
+      },
+      {
+        "kind": "need",
+        "unit": "zy6",
+        "text": "我纵伤亡已近 12%（阈值 12%），请求增援一个师，或允许整理后再战。",
+        "status": "open"
+      }
+    ],
+    "autonomy": true,
+    "auth": 1,
+    "stats": {
+      "draws": 50,
+      "instances": 2111,
+      "tris": 117730
+    }
+  }
+}

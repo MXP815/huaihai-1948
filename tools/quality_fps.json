@@ -1,0 +1,255 @@
+{
+  "env": {
+    "note": "桌面 Windows + Edge headless；390×844、DPR3 触控仿真。非真机、非手机 GPU。",
+    "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics (0x000046A6) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "startedAt": "2026-11-05T08:58:56.545Z",
+    "tiers": {
+      "high": "dpr≤1.5 / 像素预算 2.6M / 阴影 2048 / MSAA4 / 树步长1 / 绘制距离430 / 泛光",
+      "mid": "dpr≤1.0 / 像素预算 1.5M / 阴影 1536 / MSAA4 / 树步长2 / 绘制距离310 / 泛光",
+      "low": "dpr≤0.75 / 像素预算 0.85M / 阴影关 / MSAA2 / 树步长4 / 绘制距离210 / 无泛光"
+    },
+    "softwareRenderer": "WebKit WebGL"
+  },
+  "modes": {
+    "gpu": {
+      "high": {
+        "frames": 601,
+        "sec": 10.006699999999254,
+        "fps": 60.1,
+        "meanMs": 16.65,
+        "p50": 16.7,
+        "p95": 16.9,
+        "p99": 17.1,
+        "long30": 0,
+        "long20": 0,
+        "worst": 17.2,
+        "effDpr": 1.5,
+        "canvas": [
+          585,
+          1266
+        ],
+        "draws": 50,
+        "instances": 2151,
+        "tris": 118210
+      },
+      "mid": {
+        "frames": 601,
+        "sec": 10.004599999997765,
+        "fps": 60.1,
+        "meanMs": 16.64,
+        "p50": 16.7,
+        "p95": 16.9,
+        "p99": 17,
+        "long30": 0,
+        "long20": 0,
+        "worst": 17.6,
+        "effDpr": 1,
+        "canvas": [
+          390,
+          844
+        ],
+        "draws": 50,
+        "instances": 1625,
+        "tris": 100326
+      },
+      "low": {
+        "frames": 601,
+        "sec": 10.013,
+        "fps": 60,
+        "meanMs": 16.66,
+        "p50": 16.7,
+        "p95": 16.9,
+        "p99": 17,
+        "long30": 0,
+        "long20": 0,
+        "worst": 17,
+        "effDpr": 0.75,
+        "canvas": [
+          292,
+          633
+        ],
+        "draws": 46,
+        "instances": 1315,
+        "tris": 90138
+      }
+    },
+    "cpu6": {
+      "high": {
+        "frames": 400,
+        "sec": 10.032,
+        "fps": 39.9,
+        "meanMs": 25.01,
+        "p50": 16.7,
+        "p95": 50,
+        "p99": 66.9,
+        "long30": 54,
+        "long20": 13,
+        "worst": 150.1,
+        "effDpr": 1.5,
+        "canvas": [
+          585,
+          1266
+        ],
+        "draws": 50,
+        "instances": 2151,
+        "tris": 118210
+      },
+      "mid": {
+        "frames": 439,
+        "sec": 10.052099999997765,
+        "fps": 43.7,
+        "meanMs": 22.8,
+        "p50": 16.7,
+        "p95": 49.9,
+        "p99": 66.6,
+        "long30": 55,
+        "long20": 8,
+        "worst": 66.8,
+        "effDpr": 1,
+        "canvas": [
+          390,
+          844
+        ],
+        "draws": 50,
+        "instances": 1625,
+        "tris": 100326
+      },
+      "low": {
+        "frames": 482,
+        "sec": 10.037599999997765,
+        "fps": 48,
+        "meanMs": 20.76,
+        "p50": 16.7,
+        "p95": 33.4,
+        "p99": 49.9,
+        "long30": 34,
+        "long20": 2,
+        "worst": 66.8,
+        "effDpr": 0.75,
+        "canvas": [
+          292,
+          633
+        ],
+        "draws": 46,
+        "instances": 1315,
+        "tris": 90138
+      }
+    },
+    "software": {
+      "high": {
+        "frames": 116,
+        "sec": 10.046599999997765,
+        "fps": 11.5,
+        "meanMs": 86.54,
+        "p50": 83.4,
+        "p95": 100,
+        "p99": 100.1,
+        "long30": 115,
+        "long20": 115,
+        "worst": 100.1,
+        "effDpr": 1.5,
+        "canvas": [
+          585,
+          1266
+        ],
+        "draws": 50,
+        "instances": 2141,
+        "tris": 118090
+      },
+      "mid": {
+        "frames": 170,
+        "sec": 10.0625,
+        "fps": 16.9,
+        "meanMs": 59.1,
+        "p50": 66.6,
+        "p95": 66.7,
+        "p99": 66.8,
+        "long30": 169,
+        "long20": 111,
+        "worst": 66.8,
+        "effDpr": 1,
+        "canvas": [
+          390,
+          844
+        ],
+        "draws": 50,
+        "instances": 1625,
+        "tris": 100326
+      },
+      "low": {
+        "frames": 303,
+        "sec": 10.021,
+        "fps": 30.2,
+        "meanMs": 33.05,
+        "p50": 33.3,
+        "p95": 33.4,
+        "p99": 50,
+        "long30": 88,
+        "long20": 1,
+        "worst": 50.1,
+        "effDpr": 0.75,
+        "canvas": [
+          292,
+          633
+        ],
+        "draws": 46,
+        "instances": 1315,
+        "tris": 90138
+      }
+    }
+  },
+  "verdict": {
+    "gpu": {
+      "high": {
+        "playable": true,
+        "fps": 60.1,
+        "p95": 16.9
+      },
+      "mid": {
+        "playable": true,
+        "fps": 60.1,
+        "p95": 16.9
+      },
+      "low": {
+        "playable": true,
+        "fps": 60,
+        "p95": 16.9
+      }
+    },
+    "cpu6": {
+      "high": {
+        "playable": true,
+        "fps": 39.9,
+        "p95": 50
+      },
+      "mid": {
+        "playable": true,
+        "fps": 43.7,
+        "p95": 49.9
+      },
+      "low": {
+        "playable": true,
+        "fps": 48,
+        "p95": 33.4
+      }
+    },
+    "software": {
+      "high": {
+        "playable": false,
+        "fps": 11.5,
+        "p95": 100
+      },
+      "mid": {
+        "playable": false,
+        "fps": 16.9,
+        "p95": 66.7
+      },
+      "low": {
+        "playable": true,
+        "fps": 30.2,
+        "p95": 33.4
+      }
+    }
+  },
+  "finishedAt": "2026-11-05T09:00:53.883Z"
+}
